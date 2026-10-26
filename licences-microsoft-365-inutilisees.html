@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Licences Microsoft 365 payées pour rien : les 7 cas à chercher</title>
+<meta name="description" content="Comptes désactivés licenciés, licences qui se recouvrent, licences non attribuées, invités licenciés : comment trouver et chiffrer les licences Microsoft 365 inutiles.">
+<link rel="canonical" href="https://www.pactio-it.fr/licences-microsoft-365-inutilisees.html">
+<meta property="og:title" content="Licences Microsoft 365 payées pour rien : les 7 cas à chercher"><meta property="og:description" content="Comptes désactivés licenciés, licences qui se recouvrent, licences non attribuées, invités licenciés : comment trouver et chiffrer les licences Microsoft 365 inutiles."><meta property="og:type" content="website"><meta property="og:url" content="https://www.pactio-it.fr/licences-microsoft-365-inutilisees.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<header class="top"><div class="wrap nav"><a class="brand" href="index.html"><span class="mark">P</span>Pactio</a>
+<nav><a href="index.html#outils">Outils</a><a href="index.html#guides">Guides</a><a class="cta" href="https://pactiofr.gumroad.com/l/bilan-express">Bilan gratuit</a></nav></div></header>
+<article><div class="crumbs"><a href="index.html">Pactio</a> › Guides</div><h1>Licences Microsoft 365 payées pour rien : les 7 cas à chercher</h1><div class="meta">Par Sébastien Mastain, administrateur systèmes et réseaux · octobre 2026</div>
+<p>Dans beaucoup de tenants, une partie des licences Microsoft 365 est payée pour rien. Sur un tenant réel de plus de 300 comptes, l'audit a fait apparaître plus de 11 000 € d'économies annuelles possibles. Voici où regarder.</p>
+<h2>Les 7 cas</h2>
+<table><tr><th>Cas</th><th>Exemple</th></tr>
+<tr><td>Compte désactivé avec licence</td><td>Un salarié parti il y a huit mois : compte bloqué, licence toujours facturée.</td></tr>
+<tr><td>Licences qui se recouvrent</td><td>Business Standard et Business Premium sur la même personne : la première est déjà incluse dans la seconde.</td></tr>
+<tr><td>Licences achetées non attribuées</td><td>14 licences payées, 12 utilisées.</td></tr>
+<tr><td>Compte inactif depuis 90 jours</td><td>Aucune connexion depuis trois mois. La date de dernière connexion demande Entra ID P1 (inclus dans Business Premium).</td></tr>
+<tr><td>Invité avec licence</td><td>Un prestataire externe qui consomme une licence du client.</td></tr>
+<tr><td>Attribution directe et par groupe</td><td>Pas de surcoût, mais source d'oublis au départ des salariés.</td></tr>
+<tr><td>Erreur d'attribution par groupe</td><td>Stock épuisé ou conflit de services : la licence n'est pas appliquée.</td></tr>
+</table>
+<h2>Comment les trouver</h2>
+<p>Le centre d'administration Microsoft 365 affiche les licences par utilisateur, mais ne croise pas l'état du compte, la dernière connexion et les recouvrements. Avec le module Microsoft Graph PowerShell, on récupère tout en lecture seule :</p>
+<pre><code>Connect-MgGraph -Scopes "User.Read.All","Organization.Read.All"
+Get-MgSubscribedSku | Select SkuPartNumber, ConsumedUnits, @{n='Payées';e={$_.PrepaidUnits.Enabled}}
+Get-MgUser -All -Property DisplayName,AccountEnabled,AssignedLicenses |
+  Where-Object { -not $_.AccountEnabled -and $_.AssignedLicenses.Count }</code></pre>
+<p>Le premier tableau montre les licences payées et utilisées, le second les comptes désactivés qui gardent une licence. Le rôle <b>Lecteur global</b> suffit : il ne permet aucune modification.</p>
+<h2>Chiffrer l'économie</h2>
+<p>C'est ce qui fait agir le client. Multipliez chaque licence inutile par son prix mensuel public, puis par 12. Présentez le total par cas et nommez les comptes concernés : le client décide en connaissance de cause.</p>
+<div class="box o"><b>À vérifier avant de retirer une licence :</b> une boîte aux lettres d'un compte désactivé peut devoir être conservée (obligation légale, transfert à un collègue). Convertissez-la en boîte partagée plutôt que de supprimer le compte.</div>
+<h2>Automatiser l'audit</h2>
+<p>Le <a href="https://pactiofr.gumroad.com/l/pack-scripts-m365">Pack M365 &amp; Intune</a> contient un script qui détecte ces 7 cas, nomme les comptes et chiffre l'économie au prix public Microsoft France, avec un rapport client prêt à présenter. Il est en lecture seule et a été testé sur un tenant de plus de 1 300 comptes.</p>
+</article>
+<footer><div class="wrap f"><div><b>Pactio</b> · outils PowerShell pour informaticiens, par Sébastien Mastain, administrateur systèmes et réseaux depuis 25 ans, fondateur de <a href="https://www.serenit38.fr">SérénIT38</a>, infogérance et maintenance informatique des TPE et PME en Isère.</div>
+<div><a href="mentions-legales.html">Mentions légales</a> · <a href="https://pactiofr.gumroad.com">Boutique</a></div></div></footer>
+</body></html>

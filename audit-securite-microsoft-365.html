@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Audit de sécurité Microsoft 365 : la checklist pour une PME</title>
+<meta name="description" content="MFA, administrateurs globaux, accès conditionnel, invités, applications et secrets : les contrôles de sécurité Microsoft 365 à faire en premier dans une PME.">
+<link rel="canonical" href="https://www.pactio-it.fr/audit-securite-microsoft-365.html">
+<meta property="og:title" content="Audit de sécurité Microsoft 365 : la checklist pour une PME"><meta property="og:description" content="MFA, administrateurs globaux, accès conditionnel, invités, applications et secrets : les contrôles de sécurité Microsoft 365 à faire en premier dans une PME."><meta property="og:type" content="website"><meta property="og:url" content="https://www.pactio-it.fr/audit-securite-microsoft-365.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<header class="top"><div class="wrap nav"><a class="brand" href="index.html"><span class="mark">P</span>Pactio</a>
+<nav><a href="index.html#outils">Outils</a><a href="index.html#guides">Guides</a><a class="cta" href="https://pactiofr.gumroad.com/l/bilan-express">Bilan gratuit</a></nav></div></header>
+<article><div class="crumbs"><a href="index.html">Pactio</a> › Guides</div><h1>Audit de sécurité Microsoft 365 : la checklist pour une PME</h1><div class="meta">Par Sébastien Mastain, administrateur systèmes et réseaux · octobre 2026</div>
+<p>La plupart des incidents Microsoft 365 en PME viennent de quelques réglages : des comptes sans double authentification, trop d'administrateurs, des invités oubliés. Voici les contrôles à faire en premier, par ordre d'impact.</p>
+<h2>1. Double authentification (MFA)</h2>
+<ul><li>Qui n'a <b>aucune méthode MFA enregistrée</b> ? Ce sont les comptes les plus exposés au vol de mot de passe.</li>
+<li>Les <b>administrateurs</b> ont-ils tous une MFA résistante (application, clé) ?</li>
+<li>Les <b>paramètres de sécurité par défaut</b> ou une règle d'accès conditionnel imposent-ils la MFA à tous ?</li></ul>
+<h2>2. Administrateurs</h2>
+<ul><li>Combien d'<b>administrateurs généraux</b> ? Microsoft recommande d'en avoir moins de cinq. Dans les PME, on en trouve souvent bien plus.</li>
+<li>Des administrateurs <b>inactifs</b> ou des comptes de prestataires partis ?</li>
+<li>Utilisent-ils un compte dédié à l'administration, distinct de leur compte de tous les jours ?</li></ul>
+<h2>3. Accès conditionnel et méthodes héritées</h2>
+<ul><li>Une règle bloque-t-elle l'<b>authentification héritée</b> (protocoles sans MFA) ?</li>
+<li>Les connexions depuis l'étranger ou depuis des appareils non gérés sont-elles encadrées, quand la licence le permet (Entra ID P1) ?</li></ul>
+<h2>4. Invités</h2>
+<ul><li>Invités <b>inactifs</b> depuis plus de 90 jours, ou qui n'ont jamais accepté l'invitation.</li>
+<li>Qui peut inviter : tout le monde, ou seulement les administrateurs ?</li></ul>
+<h2>5. Applications et secrets</h2>
+<ul><li>Applications avec des <b>secrets ou certificats expirés ou proches de l'expiration</b>.</li>
+<li>Applications tierces ayant reçu des droits étendus avec un consentement donné par un utilisateur.</li></ul>
+<h2>6. Utilisateurs à risque</h2>
+<p>Entra ID signale des utilisateurs à risque (identifiants divulgués, connexions suspectes). Un compte désactivé encore signalé à risque est à nettoyer ; un compte actif est à traiter en priorité.</p>
+<div class="box"><b>Outils gratuits de Microsoft et de la communauté :</b> le Secure Score dans le portail Defender donne une note globale ; ScubaGear (CISA) et Maester vérifient des centaines de règles. Ils sont complets, mais leurs rapports sont techniques et en anglais.</div>
+<h2>Présenter le résultat au client</h2>
+<p>Comme pour tout audit : une note, les constats classés <b>critique / important / conseil</b>, et pour chacun le nom des comptes concernés et l'action à mener. Le dirigeant doit comprendre en une page pourquoi il faut agir.</p>
+<p>Le script d'audit de sécurité du <a href="https://pactiofr.gumroad.com/l/pack-scripts-m365">Pack M365 &amp; Intune</a> fait ces contrôles en lecture seule (rôle Lecteur global) et produit un rapport noté sur 100, en français, avec des liens directs vers le portail Entra pour chaque compte. Il a été testé sur un tenant réel de plus de 1 300 comptes.</p>
+</article>
+<footer><div class="wrap f"><div><b>Pactio</b> · outils PowerShell pour informaticiens, par Sébastien Mastain, administrateur systèmes et réseaux depuis 25 ans, fondateur de <a href="https://www.serenit38.fr">SérénIT38</a>, infogérance et maintenance informatique des TPE et PME en Isère.</div>
+<div><a href="mentions-legales.html">Mentions légales</a> · <a href="https://pactiofr.gumroad.com">Boutique</a></div></div></footer>
+</body></html>
