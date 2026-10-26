@@ -2,39 +2,50 @@
 <html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Audit de sécurité Microsoft 365 : la checklist pour une PME</title>
 <meta name="description" content="MFA, administrateurs globaux, accès conditionnel, invités, applications et secrets : les contrôles de sécurité Microsoft 365 à faire en premier dans une PME.">
+<meta name="author" content="Sébastien Mastain">
 <link rel="canonical" href="https://www.pactio-it.fr/audit-securite-microsoft-365.html">
-<meta property="og:title" content="Audit de sécurité Microsoft 365 : la checklist pour une PME"><meta property="og:description" content="MFA, administrateurs globaux, accès conditionnel, invités, applications et secrets : les contrôles de sécurité Microsoft 365 à faire en premier dans une PME."><meta property="og:type" content="website"><meta property="og:url" content="https://www.pactio-it.fr/audit-securite-microsoft-365.html">
+<meta property="og:site_name" content="Pactio"><meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Audit de sécurité Microsoft 365 : la checklist pour une PME"><meta property="og:description" content="MFA, administrateurs globaux, accès conditionnel, invités, applications et secrets : les contrôles de sécurité Microsoft 365 à faire en premier dans une PME.">
+<meta property="og:type" content="article"><meta property="og:url" content="https://www.pactio-it.fr/audit-securite-microsoft-365.html"><meta property="og:image" content="https://www.pactio-it.fr/img/og-pactio.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Audit de sécurité Microsoft 365 : la checklist pour une PME", "description": "MFA, administrateurs globaux, accès conditionnel, invités, applications et secrets : les contrôles de sécurité Microsoft 365 à faire en premier dans une PME.", "inLanguage": "fr-FR", "datePublished": "2026-10-26", "dateModified": "2026-10-26", "author": {"@type": "Person", "name": "Sébastien Mastain", "jobTitle": "Administrateur systèmes et réseaux", "url": "https://www.pactio-it.fr/a-propos.html", "worksFor": {"@type": "Organization", "name": "SérénIT38", "url": "https://www.serenit38.fr"}}, "publisher": {"@type": "Organization", "name": "Pactio", "logo": {"@type": "ImageObject", "url": "https://www.pactio-it.fr/favicon.svg"}}, "mainEntityOfPage": "https://www.pactio-it.fr/audit-securite-microsoft-365.html", "image": "https://www.pactio-it.fr/img/og-pactio.jpg"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Pactio", "item": "https://www.pactio-it.fr/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://www.pactio-it.fr/index.html#guides"}, {"@type": "ListItem", "position": 3, "name": "Audit de sécurité Microsoft 365 : la checklist pour une PME", "item": "https://www.pactio-it.fr/audit-securite-microsoft-365.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Combien d'administrateurs généraux faut-il dans Microsoft 365 ?", "acceptedAnswer": {"@type": "Answer", "text": "Microsoft recommande d'en avoir moins de cinq, et au moins deux pour ne pas perdre l'accès. Les autres administrateurs reçoivent des rôles limités à leur besoin (Exchange, utilisateurs, facturation)."}}, {"@type": "Question", "name": "Les paramètres de sécurité par défaut suffisent-ils pour une PME ?", "acceptedAnswer": {"@type": "Answer", "text": "Ils imposent la MFA et bloquent l'authentification héritée, ce qui couvre l'essentiel. L'accès conditionnel, inclus dans Entra ID P1, permet d'aller plus loin : appareils conformes, localisation, applications."}}, {"@type": "Question", "name": "Quels outils gratuits pour auditer la sécurité Microsoft 365 ?", "acceptedAnswer": {"@type": "Answer", "text": "Le Secure Score dans le portail Defender, ScubaGear publié par la CISA et Maester. Ils sont complets, mais leurs rapports sont techniques et en anglais."}}]}</script>
 </head><body>
-<header class="top"><div class="wrap nav"><a class="brand" href="index.html"><span class="mark">P</span>Pactio</a>
-<nav><a href="index.html#outils">Outils</a><a href="script-sur-mesure.html">Sur mesure</a><a href="index.html#guides">Guides</a><a class="cta" href="https://pactiofr.gumroad.com/l/bilan-express">Bilan gratuit</a></nav></div></header>
-<article><div class="crumbs"><a href="index.html">Pactio</a> › Guides</div><h1>Audit de sécurité Microsoft 365 : la checklist pour une PME</h1><div class="meta">Par Sébastien Mastain, administrateur systèmes et réseaux · octobre 2026</div>
-<p>La plupart des incidents Microsoft 365 en PME viennent de quelques réglages : des comptes sans double authentification, trop d'administrateurs, des invités oubliés. Voici les contrôles à faire en premier, par ordre d'impact.</p>
-<h2>1. Double authentification (MFA)</h2>
+<a class="skip" href="#main">Aller au contenu</a>
+<header class="top"><div class="wrap nav"><a class="brand" href="index.html" aria-label="Pactio, accueil"><span class="mark" aria-hidden="true">P</span>Pactio</a>
+<nav aria-label="Navigation principale"><a href="index.html#outils">Outils</a><a href="index.html#guides">Guides</a><a href="script-sur-mesure.html">Sur mesure</a><a href="a-propos.html">À propos</a><a class="cta" href="https://pactiofr.gumroad.com/l/bilan-express">Bilan gratuit</a></nav></div></header>
+<main id="main"><div class="art-head"><div class="wrap"><div class="crumbs"><a href="index.html">Pactio</a> › Guides</div><h1>Audit de sécurité Microsoft 365 : la checklist pour une PME</h1>
+<div class="byline"><span class="av" aria-hidden="true">SM</span><span>Sébastien Mastain, administrateur systèmes et réseaux depuis 27 ans · mis à jour le 26/10/2026</span></div></div></div>
+<article><div class="tldr"><b>En bref</b><p>Les contrôles qui comptent le plus dans une PME : comptes sans double authentification, nombre d'administrateurs généraux (moins de cinq selon Microsoft), authentification héritée encore ouverte, invités oubliés, secrets d'applications expirés et utilisateurs signalés à risque.</p></div><h2>1. Double authentification</h2>
 <ul><li>Qui n'a <b>aucune méthode MFA enregistrée</b> ? Ce sont les comptes les plus exposés au vol de mot de passe.</li>
 <li>Les <b>administrateurs</b> ont-ils tous une MFA résistante (application, clé) ?</li>
 <li>Les <b>paramètres de sécurité par défaut</b> ou une règle d'accès conditionnel imposent-ils la MFA à tous ?</li></ul>
 <h2>2. Administrateurs</h2>
-<ul><li>Combien d'<b>administrateurs généraux</b> ? Microsoft recommande d'en avoir moins de cinq. Dans les PME, on en trouve souvent bien plus.</li>
+<ul><li>Combien d'<b>administrateurs généraux</b> ? Dans les PME, on en trouve souvent bien plus que les cinq recommandés.</li>
 <li>Des administrateurs <b>inactifs</b> ou des comptes de prestataires partis ?</li>
 <li>Utilisent-ils un compte dédié à l'administration, distinct de leur compte de tous les jours ?</li></ul>
-<h2>3. Accès conditionnel et méthodes héritées</h2>
-<ul><li>Une règle bloque-t-elle l'<b>authentification héritée</b> (protocoles sans MFA) ?</li>
-<li>Les connexions depuis l'étranger ou depuis des appareils non gérés sont-elles encadrées, quand la licence le permet (Entra ID P1) ?</li></ul>
+<h2>3. Accès conditionnel et authentification héritée</h2>
+<ul><li>Une règle bloque-t-elle l'<b>authentification héritée</b>, ces protocoles qui ne passent pas par la MFA ?</li>
+<li>Les connexions depuis l'étranger ou depuis des appareils non gérés sont-elles encadrées, quand la licence le permet ?</li></ul>
 <h2>4. Invités</h2>
 <ul><li>Invités <b>inactifs</b> depuis plus de 90 jours, ou qui n'ont jamais accepté l'invitation.</li>
 <li>Qui peut inviter : tout le monde, ou seulement les administrateurs ?</li></ul>
 <h2>5. Applications et secrets</h2>
 <ul><li>Applications avec des <b>secrets ou certificats expirés ou proches de l'expiration</b>.</li>
-<li>Applications tierces ayant reçu des droits étendus avec un consentement donné par un utilisateur.</li></ul>
+<li>Applications tierces ayant reçu des droits étendus par le consentement d'un utilisateur.</li></ul>
 <h2>6. Utilisateurs à risque</h2>
-<p>Entra ID signale des utilisateurs à risque (identifiants divulgués, connexions suspectes). Un compte désactivé encore signalé à risque est à nettoyer ; un compte actif est à traiter en priorité.</p>
-<div class="box"><b>Outils gratuits de Microsoft et de la communauté :</b> le Secure Score dans le portail Defender donne une note globale ; ScubaGear (CISA) et Maester vérifient des centaines de règles. Ils sont complets, mais leurs rapports sont techniques et en anglais.</div>
-<h2>Présenter le résultat au client</h2>
-<p>Comme pour tout audit : une note, les constats classés <b>critique / important / conseil</b>, et pour chacun le nom des comptes concernés et l'action à mener. Le dirigeant doit comprendre en une page pourquoi il faut agir.</p>
-<p>Le script d'audit de sécurité du <a href="https://pactiofr.gumroad.com/l/pack-scripts-m365">Pack M365 &amp; Intune</a> fait ces contrôles en lecture seule (rôle Lecteur global) et produit un rapport noté sur 100, en français, avec des liens directs vers le portail Entra pour chaque compte. Il a été testé sur un tenant réel de plus de 1 300 comptes.</p>
-</article>
-<footer><div class="wrap f"><div><b>Pactio</b> · outils PowerShell pour informaticiens, par Sébastien Mastain, administrateur systèmes et réseaux depuis 25 ans, fondateur de <a href="https://www.serenit38.fr">SérénIT38</a>, infogérance et maintenance informatique des TPE et PME en Isère.</div>
-<div><a href="mentions-legales.html">Mentions légales</a> · <a href="https://pactiofr.gumroad.com">Boutique</a></div></div></footer>
+<p>Entra ID signale des utilisateurs à risque (identifiants divulgués, connexions suspectes). Un compte actif signalé est à traiter en priorité ; un compte désactivé encore signalé est à nettoyer.</p>
+<h2>Présenter le résultat</h2>
+<p>Une note, les constats classés <b>critique, important ou conseil</b>, et pour chacun les comptes concernés et l'action à mener. Le dirigeant doit comprendre en une page pourquoi il faut agir.</p>
+<h2>Questions fréquentes</h2><div class="faq"><details><summary>Combien d&#x27;administrateurs généraux faut-il dans Microsoft 365 ?</summary><p>Microsoft recommande d&#x27;en avoir moins de cinq, et au moins deux pour ne pas perdre l&#x27;accès. Les autres administrateurs reçoivent des rôles limités à leur besoin (Exchange, utilisateurs, facturation).</p></details><details><summary>Les paramètres de sécurité par défaut suffisent-ils pour une PME ?</summary><p>Ils imposent la MFA et bloquent l&#x27;authentification héritée, ce qui couvre l&#x27;essentiel. L&#x27;accès conditionnel, inclus dans Entra ID P1, permet d&#x27;aller plus loin : appareils conformes, localisation, applications.</p></details><details><summary>Quels outils gratuits pour auditer la sécurité Microsoft 365 ?</summary><p>Le Secure Score dans le portail Defender, ScubaGear publié par la CISA et Maester. Ils sont complets, mais leurs rapports sont techniques et en anglais.</p></details></div>
+<div class="cta-box"><p><b>En lecture seule, en français :</b> le script d'audit de sécurité du Pack Microsoft 365 fait ces contrôles avec le rôle Lecteur global et produit un rapport noté sur 100, avec un lien vers le portail Entra pour chaque compte.</p><a class="btn btn-a" href="https://pactiofr.gumroad.com/l/pack-scripts-m365">Voir le Pack Microsoft 365</a></div>
+<div class="author"><span class="av" aria-hidden="true">SM</span><p><b>Sébastien Mastain</b> est administrateur systèmes et réseaux depuis 27 ans. Il intervient en régie en entreprise et auprès des TPE et PME de l'Isère avec <a href="https://www.serenit38.fr">SérénIT38</a>, et conçoit les outils Pactio. <a href="a-propos.html">En savoir plus</a></p></div>
+</article></main>
+<footer><div class="wrap"><div class="f">
+<div><b>Pactio</b><p style="margin-top:8px">Des scripts PowerShell testés en réel pour les informaticiens qui interviennent en TPE et PME. Créé par Sébastien Mastain, administrateur systèmes et réseaux depuis 27 ans, fondateur de <a style="display:inline" href="https://www.serenit38.fr">SérénIT38</a>, infogérance et maintenance informatique des TPE et PME en Isère.</p></div>
+<div><b>Outils</b><a href="https://pactiofr.gumroad.com/l/bilan-express">Bilan express gratuit</a><a href="https://pactiofr.gumroad.com/l/pack-tpe">Pack TPE</a><a href="https://pactiofr.gumroad.com/l/pack-scripts-m365">Pack Microsoft 365</a><a href="https://pactiofr.gumroad.com/l/kit-signature">Kit Signature</a></div>
+<div><b>Pactio</b><a href="index.html#guides">Guides</a><a href="script-sur-mesure.html">Script sur mesure</a><a href="a-propos.html">À propos</a><a href="mentions-legales.html">Mentions légales</a></div>
+</div><p class="legal">Pactio est un nom commercial de Sébastien Mastain EI, Tullins (38). Ventes et paiements assurés par Gumroad.</p></div></footer>
 </body></html>

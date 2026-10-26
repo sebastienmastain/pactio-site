@@ -1,0 +1,20 @@
+# Pactio
+
+> Pactio publie des scripts PowerShell testés en réel pour les informaticiens qui interviennent en TPE et PME en France, avec des procédures illustrées et des rapports clients en français notés sur 100. Créé par Sébastien Mastain, administrateur systèmes et réseaux depuis 27 ans à Tullins (Isère), fondateur de SérénIT38 (https://www.serenit38.fr).
+
+## Outils
+- [Bilan express (gratuit)](https://pactiofr.gumroad.com/l/bilan-express) : bilan de santé d'un PC Windows en 2 minutes, rapport noté sur 100, lecture seule, PowerShell 5.1 sans module.
+- [Pack TPE (39 €)](https://pactiofr.gumroad.com/l/pack-tpe) : bilan de santé de tout le parc (postes, réseau, Internet, Wi-Fi), option serveur et Active Directory, migration de PC. 3 scripts, 4 procédures PDF.
+- [Pack Scripts Microsoft 365 et Intune (39 €)](https://pactiofr.gumroad.com/l/pack-scripts-m365) : audit des licences chiffré en euros, audit de sécurité du tenant noté sur 100, inventaire Intune, Windows Update, Dell Command Update. 6 scripts.
+- [Kit Signature (29 €)](https://pactiofr.gumroad.com/l/kit-signature) : proposition commerciale, contrat de maintenance informatique et annexe RGPD, avec générateur.
+
+## Guides
+- [Rapport d'audit informatique pour une TPE](https://www.pactio-it.fr/rapport-audit-informatique-tpe.html) : les 6 thèmes à vérifier, la notation et le format du rapport.
+- [Licences Microsoft 365 payées pour rien : les 7 cas](https://www.pactio-it.fr/licences-microsoft-365-inutilisees.html)
+- [Audit de sécurité Microsoft 365 pour une PME](https://www.pactio-it.fr/audit-securite-microsoft-365.html)
+
+## Services
+- [Script PowerShell sur mesure](https://www.pactio-it.fr/script-sur-mesure.html) : audits, rapports clients, automatisations Microsoft 365, Intune et Active Directory, sur devis.
+
+## Contact
+- contact@serenit38.fr

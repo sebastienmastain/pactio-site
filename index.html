@@ -1,43 +1,104 @@
 <!doctype html>
 <html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pactio — scripts PowerShell testés en réel pour informaticiens TPE et PME</title>
-<meta name="description" content="Bilan de santé de parc, audit Microsoft 365, migration de PC : des scripts PowerShell testés en réel, avec rapports clients en français et procédures illustrées.">
+<title>Pactio : scripts PowerShell testés en réel pour informaticiens TPE et PME</title>
+<meta name="description" content="Bilan de santé de parc, audit Microsoft 365, migration de PC : des scripts PowerShell testés en réel, avec procédures et rapports clients en français. Bilan express gratuit.">
+<meta name="author" content="Sébastien Mastain">
 <link rel="canonical" href="https://www.pactio-it.fr/">
-<meta property="og:title" content="Pactio — scripts PowerShell testés en réel pour informaticiens TPE et PME"><meta property="og:description" content="Bilan de santé de parc, audit Microsoft 365, migration de PC : des scripts PowerShell testés en réel, avec rapports clients en français et procédures illustrées."><meta property="og:type" content="website"><meta property="og:url" content="https://www.pactio-it.fr/">
+<meta property="og:site_name" content="Pactio"><meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Pactio : scripts PowerShell testés en réel pour informaticiens TPE et PME"><meta property="og:description" content="Bilan de santé de parc, audit Microsoft 365, migration de PC : des scripts PowerShell testés en réel, avec procédures et rapports clients en français. Bilan express gratuit.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://www.pactio-it.fr/"><meta property="og:image" content="https://www.pactio-it.fr/img/og-pactio.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://www.pactio-it.fr/#org", "name": "Pactio", "url": "https://www.pactio-it.fr/", "logo": "https://www.pactio-it.fr/favicon.svg", "description": "Scripts PowerShell testés en réel pour les informaticiens qui interviennent en TPE et PME, avec rapports clients en français.", "founder": {"@type": "Person", "name": "Sébastien Mastain", "jobTitle": "Administrateur systèmes et réseaux", "url": "https://www.pactio-it.fr/a-propos.html", "worksFor": {"@type": "Organization", "name": "SérénIT38", "url": "https://www.serenit38.fr"}}, "email": "contact@serenit38.fr", "address": {"@type": "PostalAddress", "addressLocality": "Tullins", "postalCode": "38210", "addressCountry": "FR"}, "sameAs": ["https://pactiofr.gumroad.com", "https://www.tiktok.com/@pactio.fr", "https://www.serenit38.fr"]}, {"@type": "WebSite", "@id": "https://www.pactio-it.fr/#site", "url": "https://www.pactio-it.fr/", "name": "Pactio", "inLanguage": "fr-FR", "publisher": {"@id": "https://www.pactio-it.fr/#org"}}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "name": "Outils Pactio", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Product", "name": "Bilan express", "description": "Script PowerShell gratuit : bilan de santé d'un PC Windows en 2 minutes, rapport client noté sur 100.", "url": "https://pactiofr.gumroad.com/l/bilan-express", "image": "https://www.pactio-it.fr/img/bilan-express.jpg", "brand": {"@type": "Brand", "name": "Pactio"}, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "url": "https://pactiofr.gumroad.com/l/bilan-express"}}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Product", "name": "Pack TPE", "description": "Bilan de santé de tout le parc (postes, réseau, Internet), option serveur et Active Directory, migration de PC. 3 scripts PowerShell et 4 procédures PDF.", "url": "https://pactiofr.gumroad.com/l/pack-tpe", "image": "https://www.pactio-it.fr/img/pack-tpe.jpg", "brand": {"@type": "Brand", "name": "Pactio"}, "offers": {"@type": "Offer", "price": "39", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "url": "https://pactiofr.gumroad.com/l/pack-tpe"}}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Product", "name": "Pack Scripts Microsoft 365 et Intune", "description": "Audit des licences Microsoft 365 chiffré en euros, audit de sécurité du tenant, inventaire Intune, Windows Update, Dell Command Update. 6 scripts PowerShell.", "url": "https://pactiofr.gumroad.com/l/pack-scripts-m365", "image": "https://www.pactio-it.fr/img/pack-m365.jpg", "brand": {"@type": "Brand", "name": "Pactio"}, "offers": {"@type": "Offer", "price": "39", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "url": "https://pactiofr.gumroad.com/l/pack-scripts-m365"}}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Product", "name": "Kit Signature", "description": "Proposition commerciale, contrat de maintenance informatique et annexe RGPD, remplis à vos couleurs par un générateur.", "url": "https://pactiofr.gumroad.com/l/kit-signature", "brand": {"@type": "Brand", "name": "Pactio"}, "offers": {"@type": "Offer", "price": "29", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "url": "https://pactiofr.gumroad.com/l/kit-signature"}}}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Les scripts Pactio modifient-ils les postes ou le tenant du client ?", "acceptedAnswer": {"@type": "Answer", "text": "Non pour les audits : le Bilan express, le bilan de santé du parc, l'audit des licences et l'audit de sécurité Microsoft 365 sont en lecture seule. Les scripts qui corrigent (Windows Update, Dell Command Update, restauration de migration) ont un mode simulation et ne se lancent que si vous le demandez."}}, {"@type": "Question", "name": "Faut-il installer quelque chose ?", "acceptedAnswer": {"@type": "Answer", "text": "Les scripts du Pack TPE et le Bilan express tournent avec PowerShell 5.1, fourni par Windows 10 et 11, sans module à installer. Les scripts Microsoft 365 utilisent le module officiel Microsoft Graph PowerShell, installé par un script de préparation fourni."}}, {"@type": "Question", "name": "Peut-on mettre son propre logo sur les rapports ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. Les rapports des packs acceptent votre nom, votre logo et votre couleur. La version gratuite du Bilan express garde la présentation Pactio."}}, {"@type": "Question", "name": "Les scripts ont-ils vraiment été testés ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, chaque script a tourné en conditions réelles avant sa mise en vente : un tenant Microsoft 365 de plus de 1 300 comptes, un labo Windows Server 2022 avec domaine Active Directory et un PC Windows 11 joint, et de vraies migrations de PC."}}, {"@type": "Question", "name": "Puis-je utiliser les scripts chez tous mes clients ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. La licence couvre une entreprise, avec des clients illimités. La revente et le partage des scripts sont interdits."}}, {"@type": "Question", "name": "Comment se passe l'achat ?", "acceptedAnswer": {"@type": "Answer", "text": "Par Gumroad, qui encaisse le paiement, gère la TVA et envoie le lien de téléchargement par mail immédiatement."}}]}</script>
 </head><body>
-<header class="top"><div class="wrap nav"><a class="brand" href="index.html"><span class="mark">P</span>Pactio</a>
-<nav><a href="index.html#outils">Outils</a><a href="script-sur-mesure.html">Sur mesure</a><a href="index.html#guides">Guides</a><a class="cta" href="https://pactiofr.gumroad.com/l/bilan-express">Bilan gratuit</a></nav></div></header>
+<a class="skip" href="#main">Aller au contenu</a>
+<header class="top"><div class="wrap nav"><a class="brand" href="index.html" aria-label="Pactio, accueil"><span class="mark" aria-hidden="true">P</span>Pactio</a>
+<nav aria-label="Navigation principale"><a href="index.html#outils">Outils</a><a href="index.html#guides">Guides</a><a href="script-sur-mesure.html">Sur mesure</a><a href="a-propos.html">À propos</a><a class="cta" href="https://pactiofr.gumroad.com/l/bilan-express">Bilan gratuit</a></nav></div></header>
+<main id="main">
+<section class="hero"><div class="wrap hero-grid">
+<div>
+<h1>Le rapport que votre client comprend, généré par un script qui a déjà tourné.</h1>
+<p class="lead">Des scripts PowerShell pour auditer un parc de TPE, un tenant Microsoft 365 ou migrer un PC, avec leur procédure et un rapport client en français.</p>
+<div class="btns"><a class="btn btn-a" href="https://pactiofr.gumroad.com/l/bilan-express">Télécharger le Bilan express gratuit</a><a class="btn btn-l" href="#outils">Voir les outils</a></div>
+<p class="hero-note"><b>Lecture seule.</b> Aucun module à installer pour le bilan de santé. Testé sur un tenant de plus de 1 300 comptes et un labo Windows Server 2022.</p>
+</div>
+<div class="demo" aria-hidden="true">
+<div class="console"><div class="bar">Windows PowerShell</div><pre><span class="c-w">PS C:\Pactio&gt; .\Bilan-Express.ps1 -Client "Boulangerie Martin"</span>
 
-<section class="hero"><div class="wrap"><div class="kicker">Pour les informaticiens qui interviennent en TPE et PME</div>
-<h1>Des scripts PowerShell <span>testés en réel</span>, et des rapports que vos clients comprennent.</h1>
-<p>Bilan de santé d'un parc, audit Microsoft 365, migration de PC : chaque outil est livré avec sa procédure illustrée et un rapport client en français, à vos couleurs.</p>
-<div class="btns"><a class="btn o" href="https://pactiofr.gumroad.com/l/bilan-express">Essayer le Bilan express gratuit</a><a class="btn g" href="#outils">Voir les outils</a></div></div></section>
+<span class="c-g">===== Pactio · Bilan express =====</span>
+<span class="c-c">  &gt; Analyse de ce poste (PC-ACCUEIL)…</span>
+<span class="c-c">  &gt; Wi-Fi…</span>
+<span class="c-c">  &gt; Mesure du débit descendant…</span>
 
-<section id="outils"><div class="wrap"><h2>Les outils</h2><p class="lead">Chaque script a tourné sur de vrais postes, de vrais tenants et un vrai domaine avant d'être mis en vente. Les audits sont en lecture seule.</p>
-<div class="grid">
-<div class="card hl"><span class="badge">Gratuit</span><h3>Bilan express</h3><p>Le bilan de santé d'un PC Windows en 2 minutes : Windows et fin de support, sécurité, disques, Internet et Wi-Fi. Rapport noté sur 100.</p><div class="price free">0 €</div><a class="btn" href="https://pactiofr.gumroad.com/l/bilan-express">Télécharger</a></div>
-<div class="card"><h3>Pack TPE</h3><p>Bilan de santé de tout le parc (postes, réseau, Internet), option serveur et Active Directory, migration de PC sans oubli. 3 scripts, 4 procédures.</p><div class="price">39 €</div><a class="btn" href="https://pactiofr.gumroad.com/l/pack-tpe">Voir le pack</a></div>
-<div class="card"><h3>Pack M365 &amp; Intune</h3><p>Audit des licences chiffré en euros, audit de sécurité du tenant, inventaire Intune, Windows Update, Dell Command Update. 6 scripts.</p><div class="price">39 €</div><a class="btn" href="https://pactiofr.gumroad.com/l/pack-scripts-m365">Voir le pack</a></div>
-<div class="card"><h3>Kit Signature</h3><p>Proposition commerciale, contrat de maintenance et annexe RGPD, remplis à vos couleurs par un générateur.</p><div class="price">29 €</div><a class="btn" href="https://pactiofr.gumroad.com/l/kit-signature">Voir le kit</a></div>
+<span class="c-g">  Note globale : 92/100</span>
+<span class="c-w">    Postes      92/100</span>
+<span class="c-w">    Sécurité    88/100</span>
+<span class="c-d">    Réseau       — (non mesuré)</span></pre></div>
+<div class="report"><div class="rt">Bilan de santé de votre informatique</div><div class="rs">Boulangerie Martin, 26 octobre 2026</div>
+<div class="row"><svg class="ring" viewBox="0 0 120 120" role="img" aria-label="Note globale 92 sur 100"><circle cx="60" cy="60" r="48" fill="none" stroke="#E6EFEE" stroke-width="12"/><circle cx="60" cy="60" r="48" fill="none" stroke="#127A70" stroke-width="12" stroke-linecap="round" stroke-dasharray="277 302" transform="rotate(-90 60 60)"/><text x="60" y="70" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="32" fill="#13201F">92</text></svg><ul><li><span class="tag t-i">Important</span>Compte utilisé au quotidien administrateur du PC</li><li><span class="tag t-c">Conseil</span>14 programmes au démarrage</li><li><span class="tag t-c">Conseil</span>Processeur de 2019, renouvellement à prévoir</li></ul></div></div>
+</div>
+</div></section>
+
+<section id="outils"><div class="wrap">
+<h2>Les outils</h2>
+<p class="intro">Commencez par le Bilan express, gratuit. Les packs ajoutent tout le parc, le réseau, le serveur, Microsoft 365 et vos couleurs sur les rapports.</p>
+<div class="free">
+<img src="img/bilan-express.jpg" alt="Couverture du Bilan express : le bilan d'un PC en 2 minutes, rapport noté sur 100" width="800" height="450" loading="lazy">
+<div><h3>Bilan express</h3><p style="margin-top:8px">Le bilan de santé d'un PC Windows en 2 minutes : version de Windows et fin de support, âge, disques, antivirus, comptes administrateurs, BitLocker, débit Internet et Wi-Fi. Le rapport est noté sur 100 et classe les actions par priorité.</p>
+<div class="price">Gratuit <small>ou le prix que vous voulez</small></div><a class="btn btn-a" href="https://pactiofr.gumroad.com/l/bilan-express">Télécharger</a></div>
+</div>
+<div class="packs">
+<div class="pack"><img src="img/pack-tpe.jpg" alt="Couverture du Pack TPE" width="800" height="450" loading="lazy"><div class="in"><h3>Pack TPE</h3><p>Pour les TPE avec ou sans serveur.</p><ul><li>Bilan de santé de tout le parc, tournée par clé USB</li><li>Option serveur et Active Directory</li><li>Migration vers un nouveau PC</li><li>4 procédures PDF illustrées</li></ul><div class="foot"><div class="price">39 €</div><a class="btn btn-p" href="https://pactiofr.gumroad.com/l/pack-tpe">Voir le pack</a></div></div></div>
+<div class="pack"><img src="img/pack-m365.jpg" alt="Couverture du Pack Scripts Microsoft 365 et Intune" width="800" height="450" loading="lazy"><div class="in"><h3>Pack Microsoft 365 et Intune</h3><p>Pour les PME équipées de Microsoft 365.</p><ul><li>Licences payées pour rien, chiffrées en euros</li><li>Audit de sécurité du tenant noté sur 100</li><li>Inventaire Intune, Windows Update, Dell</li><li>6 scripts, 7 procédures</li></ul><div class="foot"><div class="price">39 €</div><a class="btn btn-p" href="https://pactiofr.gumroad.com/l/pack-scripts-m365">Voir le pack</a></div></div></div>
+<div class="pack"><div class="kit-visual">Kit Signature<span>Proposition, contrat, annexe RGPD</span></div><div class="in"><h3>Kit Signature</h3><p>Pour signer vos premiers contrats de maintenance.</p><ul><li>Proposition commerciale à deux formules</li><li>Contrat de maintenance informatique</li><li>Annexe RGPD (article 28)</li><li>Générateur à vos couleurs</li></ul><div class="foot"><div class="price">29 €</div><a class="btn btn-p" href="https://pactiofr.gumroad.com/l/kit-signature">Voir le kit</a></div></div></div>
+</div>
+</div></section>
+
+<section class="mist"><div class="wrap">
+<h2>Du script au rendez-vous client</h2>
+<p class="intro">Trois étapes, la même pour chaque outil.</p>
+<ol class="steps">
+<li><h3>Vous lancez le script</h3><p>Sur le poste du client ou depuis une clé USB, en suivant la procédure. Les audits ne modifient rien.</p></li>
+<li><h3>Le rapport se génère</h3><p>Une note sur 100, les constats classés critique, important ou conseil, avec l'appareil ou le compte concerné.</p></li>
+<li><h3>Vous le présentez</h3><p>Le client voit en une page ce qui doit être corrigé. C'est votre support pour un devis ou un contrat de maintenance.</p></li>
+</ol>
+</div></section>
+
+<section><div class="wrap">
+<h2>Testé avant d'être vendu</h2>
+<p class="intro">Un script généré en dix secondes a l'air parfait et casse chez le premier client. Chaque outil Pactio a tourné en réel, et ses pièges ont été corrigés.</p>
+<div class="proof">
+<div><b>Tenant de plus de 1 300 comptes</b><p>Audit des licences et audit de sécurité Microsoft 365 lancés sur un vrai tenant d'entreprise.</p></div>
+<div><b>Labo Windows Server 2022</b><p>Domaine Active Directory, PC Windows 11 joint, collecte à distance et migration de bout en bout.</p></div>
+<div><b>Vraies migrations de PC</b><p>Profils Firefox, Chrome et Edge, Outlook, imprimantes, lecteurs réseau, utilisateur standard.</p></div>
+</div>
+</div></section>
+
+<section id="guides" class="mist"><div class="wrap">
+<h2>Guides</h2>
+<p class="intro">Des méthodes concrètes, utilisables avec ou sans nos outils.</p>
+<div class="guides">
+<a href="rapport-audit-informatique-tpe.html"><div><h3>Rapport d'audit informatique pour une TPE</h3><p>Les 6 thèmes à vérifier, la notation et le format que le client lit vraiment.</p></div><span class="rd">Lire</span></a>
+<a href="licences-microsoft-365-inutilisees.html"><div><h3>Licences Microsoft 365 payées pour rien : les 7 cas</h3><p>Comptes désactivés, licences qui se recouvrent, invités licenciés, et comment chiffrer l'économie.</p></div><span class="rd">Lire</span></a>
+<a href="audit-securite-microsoft-365.html"><div><h3>Audit de sécurité Microsoft 365 pour une PME</h3><p>MFA, administrateurs, accès conditionnel, invités, applications : par où commencer.</p></div><span class="rd">Lire</span></a>
+</div>
+</div></section>
+
+<section><div class="wrap"><div class="band">
+<div><h2>Besoin d'un script précis ?</h2><p>Un audit propre à votre client, une tâche répétitive, un rapport que vos outils ne savent pas produire : je l'écris pour vous, testé et documenté.</p></div>
+<div><a class="btn btn-a" href="script-sur-mesure.html">Demander un script sur mesure</a></div>
 </div></div></section>
 
-<section class="alt"><div class="wrap"><h2>Pourquoi Pactio</h2><div class="why">
-<div><b>Testé en réel</b><p>Tenant Microsoft 365 de plus de 1 300 comptes, labo Windows Server 2022 en domaine, vraies migrations de PC. Pas un script généré et jamais lancé.</p></div>
-<div><b>Le rapport, pas seulement le script</b><p>Votre client ne lit pas un CSV. Il regarde une note sur 100 et trois actions prioritaires. C'est ce que produisent les outils.</p></div>
-<div><b>En français, à vos couleurs</b><p>Rapports et procédures en français, avec votre nom, votre logo et votre couleur.</p></div>
-<div><b>Lecture seule</b><p>Les audits ne modifient rien. Les scripts qui corrigent ont un mode simulation et se lancent exprès.</p></div>
-</div></div></section>
-
-<section class="alt"><div class="wrap"><h2>Besoin d'un script précis ?</h2><p class="lead">Un audit propre à votre client, une tâche répétitive à automatiser, un rapport que vos outils ne savent pas produire : je peux l'écrire pour vous, testé et documenté.</p><a class="btn o" href="script-sur-mesure.html">Demander un script sur mesure</a></div></section>
-
-<section id="guides"><div class="wrap"><h2>Guides</h2><p class="lead">Des méthodes concrètes, utilisables avec ou sans nos outils.</p><div class="guides">
-<a href="rapport-audit-informatique-tpe.html">Rapport d'audit informatique pour une TPE : quoi vérifier et comment le présenter<span>Les 6 thèmes à couvrir, la notation, et le format que le client lit vraiment.</span></a>
-<a href="licences-microsoft-365-inutilisees.html">Licences Microsoft 365 payées pour rien : les 7 cas à chercher<span>Comptes désactivés, licences qui se recouvrent, invités licenciés… et comment chiffrer l'économie.</span></a>
-<a href="audit-securite-microsoft-365.html">Audit de sécurité Microsoft 365 : la checklist pour une PME<span>MFA, administrateurs, accès conditionnel, invités, applications : ce qu'il faut contrôler en premier.</span></a>
-</div></div></section>
-
-<footer><div class="wrap f"><div><b>Pactio</b> · outils PowerShell pour informaticiens, par Sébastien Mastain, administrateur systèmes et réseaux depuis 25 ans, fondateur de <a href="https://www.serenit38.fr">SérénIT38</a>, infogérance et maintenance informatique des TPE et PME en Isère.</div>
-<div><a href="mentions-legales.html">Mentions légales</a> · <a href="https://pactiofr.gumroad.com">Boutique</a></div></div></footer>
+<section class="mist"><div class="wrap">
+<h2>Questions fréquentes</h2>
+<div style="max-width:820px;margin-top:24px"><div class="faq"><details><summary>Les scripts Pactio modifient-ils les postes ou le tenant du client ?</summary><p>Non pour les audits : le Bilan express, le bilan de santé du parc, l&#x27;audit des licences et l&#x27;audit de sécurité Microsoft 365 sont en lecture seule. Les scripts qui corrigent (Windows Update, Dell Command Update, restauration de migration) ont un mode simulation et ne se lancent que si vous le demandez.</p></details><details><summary>Faut-il installer quelque chose ?</summary><p>Les scripts du Pack TPE et le Bilan express tournent avec PowerShell 5.1, fourni par Windows 10 et 11, sans module à installer. Les scripts Microsoft 365 utilisent le module officiel Microsoft Graph PowerShell, installé par un script de préparation fourni.</p></details><details><summary>Peut-on mettre son propre logo sur les rapports ?</summary><p>Oui. Les rapports des packs acceptent votre nom, votre logo et votre couleur. La version gratuite du Bilan express garde la présentation Pactio.</p></details><details><summary>Les scripts ont-ils vraiment été testés ?</summary><p>Oui, chaque script a tourné en conditions réelles avant sa mise en vente : un tenant Microsoft 365 de plus de 1 300 comptes, un labo Windows Server 2022 avec domaine Active Directory et un PC Windows 11 joint, et de vraies migrations de PC.</p></details><details><summary>Puis-je utiliser les scripts chez tous mes clients ?</summary><p>Oui. La licence couvre une entreprise, avec des clients illimités. La revente et le partage des scripts sont interdits.</p></details><details><summary>Comment se passe l&#x27;achat ?</summary><p>Par Gumroad, qui encaisse le paiement, gère la TVA et envoie le lien de téléchargement par mail immédiatement.</p></details></div></div>
+</div></section>
+</main>
+<footer><div class="wrap"><div class="f">
+<div><b>Pactio</b><p style="margin-top:8px">Des scripts PowerShell testés en réel pour les informaticiens qui interviennent en TPE et PME. Créé par Sébastien Mastain, administrateur systèmes et réseaux depuis 27 ans, fondateur de <a style="display:inline" href="https://www.serenit38.fr">SérénIT38</a>, infogérance et maintenance informatique des TPE et PME en Isère.</p></div>
+<div><b>Outils</b><a href="https://pactiofr.gumroad.com/l/bilan-express">Bilan express gratuit</a><a href="https://pactiofr.gumroad.com/l/pack-tpe">Pack TPE</a><a href="https://pactiofr.gumroad.com/l/pack-scripts-m365">Pack Microsoft 365</a><a href="https://pactiofr.gumroad.com/l/kit-signature">Kit Signature</a></div>
+<div><b>Pactio</b><a href="index.html#guides">Guides</a><a href="script-sur-mesure.html">Script sur mesure</a><a href="a-propos.html">À propos</a><a href="mentions-legales.html">Mentions légales</a></div>
+</div><p class="legal">Pactio est un nom commercial de Sébastien Mastain EI, Tullins (38). Ventes et paiements assurés par Gumroad.</p></div></footer>
 </body></html>
