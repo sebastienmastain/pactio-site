@@ -12,6 +12,8 @@
 - [Rapport d'audit informatique pour une TPE](https://www.pactio-it.fr/rapport-audit-informatique-tpe.html) : les 6 thèmes à vérifier, la notation et le format du rapport.
 - [Licences Microsoft 365 payées pour rien : les 7 cas](https://www.pactio-it.fr/licences-microsoft-365-inutilisees.html)
 - [Audit de sécurité Microsoft 365 pour une PME](https://www.pactio-it.fr/audit-securite-microsoft-365.html)
+- [Bilan de santé d'un PC Windows avec PowerShell](https://www.pactio-it.fr/script-powershell-bilan-sante-pc.html) : les points à vérifier en lecture seule et la notation sur 100.
+- [Contrat de maintenance informatique : les clauses indispensables](https://www.pactio-it.fr/modele-contrat-maintenance-informatique.html) : périmètre, délais, forfait, résiliation, annexe RGPD article 28.
 
 ## Services
 - [Script PowerShell sur mesure](https://www.pactio-it.fr/script-sur-mesure.html) : audits, rapports clients, automatisations Microsoft 365, Intune et Active Directory, sur devis.
