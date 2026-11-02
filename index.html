@@ -10,91 +10,294 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="style.css?v=3">
+<link rel="stylesheet" href="style.css?v=4">
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://www.pactio-it.fr/#org", "name": "Pactio", "url": "https://www.pactio-it.fr/", "logo": "https://www.pactio-it.fr/favicon.svg", "description": "Scripts PowerShell testés en réel pour les informaticiens qui interviennent en TPE et PME, avec rapports clients en français.", "founder": {"@type": "Person", "name": "Sébastien Mastain", "jobTitle": "Administrateur systèmes et réseaux", "url": "https://www.pactio-it.fr/a-propos.html", "worksFor": {"@type": "Organization", "name": "SérénIT38", "url": "https://www.serenit38.fr"}}, "email": "contact@serenit38.fr", "address": {"@type": "PostalAddress", "addressLocality": "Tullins", "postalCode": "38210", "addressCountry": "FR"}, "sameAs": ["https://pactiofr.gumroad.com", "https://www.tiktok.com/@pactio.fr", "https://www.serenit38.fr"]}, {"@type": "WebSite", "@id": "https://www.pactio-it.fr/#site", "url": "https://www.pactio-it.fr/", "name": "Pactio", "inLanguage": "fr-FR", "publisher": {"@id": "https://www.pactio-it.fr/#org"}}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "name": "Outils Pactio", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Product", "name": "Bilan express", "description": "Script PowerShell gratuit : bilan de santé d'un PC Windows en 2 minutes, rapport client noté sur 100.", "url": "https://pactiofr.gumroad.com/l/bilan-express", "image": "https://www.pactio-it.fr/img/bilan-express.jpg", "brand": {"@type": "Brand", "name": "Pactio"}, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "url": "https://pactiofr.gumroad.com/l/bilan-express"}}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Product", "name": "Pack TPE", "description": "Bilan de santé de tout le parc (postes, réseau, Internet), option serveur et Active Directory, migration de PC. 3 scripts PowerShell et 4 procédures PDF.", "url": "https://pactiofr.gumroad.com/l/pack-tpe", "image": "https://www.pactio-it.fr/img/pack-tpe.jpg", "brand": {"@type": "Brand", "name": "Pactio"}, "offers": {"@type": "Offer", "price": "39", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "url": "https://pactiofr.gumroad.com/l/pack-tpe"}}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Product", "name": "Pack Scripts Microsoft 365 et Intune", "description": "Audit des licences Microsoft 365 chiffré en euros, audit de sécurité du tenant, inventaire Intune, Windows Update, Dell Command Update. 6 scripts PowerShell.", "url": "https://pactiofr.gumroad.com/l/pack-scripts-m365", "image": "https://www.pactio-it.fr/img/pack-m365.jpg", "brand": {"@type": "Brand", "name": "Pactio"}, "offers": {"@type": "Offer", "price": "39", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "url": "https://pactiofr.gumroad.com/l/pack-scripts-m365"}}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Product", "name": "Kit Signature", "description": "Proposition commerciale, contrat de maintenance informatique et annexe RGPD, remplis à vos couleurs par un générateur.", "url": "https://pactiofr.gumroad.com/l/kit-signature", "image": "https://www.pactio-it.fr/img/og-pactio.jpg", "brand": {"@type": "Brand", "name": "Pactio"}, "offers": {"@type": "Offer", "price": "29", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "url": "https://pactiofr.gumroad.com/l/kit-signature"}}}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Les scripts Pactio modifient-ils les postes ou le tenant du client ?", "acceptedAnswer": {"@type": "Answer", "text": "Non pour les audits : le Bilan express, le bilan de santé du parc, l'audit des licences et l'audit de sécurité Microsoft 365 sont en lecture seule. Les scripts qui corrigent (Windows Update, Dell Command Update, restauration de migration) ont un mode simulation et ne se lancent que si vous le demandez."}}, {"@type": "Question", "name": "Faut-il installer quelque chose ?", "acceptedAnswer": {"@type": "Answer", "text": "Les scripts du Pack TPE et le Bilan express tournent avec PowerShell 5.1, fourni par Windows 10 et 11, sans module à installer. Les scripts Microsoft 365 utilisent le module officiel Microsoft Graph PowerShell, installé par un script de préparation fourni."}}, {"@type": "Question", "name": "Peut-on mettre son propre logo sur les rapports ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. Les rapports des packs acceptent votre nom, votre logo et votre couleur. La version gratuite du Bilan express garde la présentation Pactio."}}, {"@type": "Question", "name": "Les scripts ont-ils vraiment été testés ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, chaque script a tourné en conditions réelles avant sa mise en vente : un tenant Microsoft 365 de plus de 1 300 comptes, un labo Windows Server 2022 avec domaine Active Directory et un PC Windows 11 joint, et de vraies migrations de PC."}}, {"@type": "Question", "name": "Puis-je utiliser les scripts chez tous mes clients ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. La licence couvre une entreprise, avec des clients illimités. La revente et le partage des scripts sont interdits."}}, {"@type": "Question", "name": "Comment se passe l'achat ?", "acceptedAnswer": {"@type": "Answer", "text": "Par Gumroad, qui encaisse le paiement, gère la TVA et envoie le lien de téléchargement par mail immédiatement."}}]}</script>
 </head><body>
 <a class="skip" href="#main">Aller au contenu</a>
-<header class="top"><div class="wrap nav"><a class="brand" href="index.html" aria-label="Pactio, accueil"><span class="mark" aria-hidden="true">P</span>Pactio</a>
-<nav aria-label="Navigation principale"><a href="index.html#outils">Outils</a><a href="index.html#guides">Guides</a><a href="script-sur-mesure.html">Sur mesure</a><a href="a-propos.html">À propos</a><a class="cta" href="https://pactiofr.gumroad.com/l/bilan-express">Bilan gratuit</a></nav></div></header>
-<main id="main">
-<section class="hero"><div class="wrap hero-grid">
+<main id="main" class="home">
+<div style="background: #F4F6F1; color: #10201A; font-family: 'Manrope', system-ui, sans-serif; font-size: 17px; line-height: 1.55; overflow: hidden;">
+
+<header class="top"><div class="wrap nav"><a class="brand" href="index.html" aria-label="Pactio, accueil"><span class="mark" aria-hidden="true">P&gt;</span>Pactio</a>
+<nav aria-label="Navigation principale"><a href="index.html#outils">Packs</a><a href="index.html#tests">Testé en réel</a><a href="index.html#guides">Guides</a><a href="script-sur-mesure.html">Sur mesure</a><a href="a-propos.html">À propos</a><a class="cta" href="https://pactiofr.gumroad.com/l/bilan-express">Bilan gratuit</a></nav></div></header>
+
+<section aria-labelledby="c-h1" style="max-width: 1240px; margin: 0 auto; padding: 36px 24px 110px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center;">
+<div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 26px;">
+<p style="margin: 0; display: inline-flex; align-self: flex-start; gap: 10px; align-items: center; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #0A5C40; background: #DDEFE5; padding: 8px 14px; border-radius: 999px;"><span class="pulse" style="width: 8px; height: 8px; border-radius: 50%; background: #0E7A55;"></span>Scripts PowerShell testés en conditions réelles</p>
+<h1 class="h1x" id="c-h1" style="margin: 0; font-size: 70px; line-height: 1.02; letter-spacing: -0.045em; font-weight: 800;">Le script tourne.<br>Le client <span style="color: #0E7A55;">signe.</span></h1>
+<div style="font-size: 26px; line-height: 1.5em; font-weight: 600; color: #3E4E47; display: flex; flex-wrap: wrap; gap: 0 10px; align-items: flex-end;">
+<span>Pactio prépare</span>
+<span style="display: inline-block; height: 1.5em; line-height: 1.5em; overflow: hidden; vertical-align: bottom; color: #0E7A55; font-weight: 800;">
+<span class="words" style="display: flex; flex-direction: column;">
+<span style="display: block; height: 1.5em; line-height: 1.5em;">vos audits.</span>
+<span style="display: block; height: 1.5em; line-height: 1.5em;">vos migrations.</span>
+<span style="display: block; height: 1.5em; line-height: 1.5em;">vos GPO.</span>
+<span style="display: block; height: 1.5em; line-height: 1.5em;">vos contrats.</span>
+<span style="display: block; height: 1.5em; line-height: 1.5em;">vos audits.</span>
+</span>
+</span>
+</div>
+<p style="margin: 0; font-size: 18px; color: #4A5A53; max-width: 540px;">Vous lancez un script en lecture seule. Votre client reçoit un rapport noté sur 100 qu'il comprend du premier coup d'œil. Écrit et éprouvé par un admin systèmes et réseaux, 27 ans de terrain.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 14px;">
+<a href="#bilan" style="background: #0E7A55; color: #FFFFFF; text-decoration: none; padding: 17px 26px; border-radius: 999px; font-weight: 700; font-size: 17px;">Essayer gratuitement →</a>
+<a href="#outils" style="color: #10201A; text-decoration: none; padding: 16px 25px; border-radius: 999px; font-weight: 700; border: 1.5px solid #10201A;">Voir les packs</a>
+</div>
+</div>
+
+<div class="hv" style="flex: 1 1 520px; min-width: 0; position: relative; height: 560px;">
+<div class="hv-photo" style="position: absolute; top: 0; right: 0; bottom: 70px; left: 60px; border-radius: 28px; overflow: hidden; box-shadow: 0 30px 70px rgba(16,32,26,0.18);">
+<img class="pz" src="img/mains.webp" alt="Mains sur le clavier d'un ordinateur portable" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+</div>
+<div id="heroAnim">
+<div class="pop hv-term" style="animation-delay: .1s; position: absolute; left: 0; bottom: 0; width: 72%; background: #10201A; border-radius: 16px; overflow: hidden; box-shadow: 0 24px 60px rgba(16,32,26,0.35);">
+<div style="display: flex; align-items: center; gap: 7px; padding: 10px 14px; background: #1A2E26;">
+<span style="width: 10px; height: 10px; border-radius: 50%; background: #FF5F57;"></span><span style="width: 10px; height: 10px; border-radius: 50%; background: #FEBC2E;"></span><span style="width: 10px; height: 10px; border-radius: 50%; background: #28C840;"></span>
+<span style="margin-left: 8px; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #8FB3A3;">PowerShell — Bilan express</span>
+</div>
+<div style="padding: 14px 18px 18px; font-family: 'JetBrains Mono', monospace; font-size: 12.5px; line-height: 1.8; color: #CFE2D8;">
+<div class="ln" style="animation-delay: .4s; color: #5EE0A3;">===== Pactio · Bilan express v1.1 =====</div>
+<div class="ln" style="animation-delay: .8s;">&gt; Analyse de ce poste (PC-ACCUEIL)…</div>
+<div class="ln" style="animation-delay: 1.1s;">&gt; Wi-Fi… Connexion Internet…</div>
+<div class="ln" style="animation-delay: 1.4s;">&gt; Mesure du débit descendant…</div>
+<div class="ln" style="animation-delay: 1.8s; color: #5EE0A3;">Note globale : 91/100</div>
+<div class="ln" style="animation-delay: 2.1s;">Postes 88 · Sécurité 88 · Internet 100</div>
+<div class="ln" style="animation-delay: 2.4s; color: #FFC773;">Important 1 · Conseil 3 <span class="blink">▌</span></div>
+</div>
+</div>
+<div class="pop hv-score" style="animation-delay: 2.6s; position: absolute; right: -8px; top: 28px; width: 250px; background: #FFFFFF; border-radius: 18px; padding: 18px; box-shadow: 0 24px 60px rgba(16,32,26,0.22); display: flex; flex-direction: column; gap: 10px;">
+<div style="display: flex; align-items: center; gap: 14px;">
+<svg width="76" height="76" viewBox="0 0 120 120" aria-hidden="true">
+<circle cx="60" cy="60" r="52" fill="none" stroke="#E3ECE6" stroke-width="12"></circle>
+<circle class="ring" cx="60" cy="60" r="52" fill="none" stroke="#0E7A55" stroke-width="12" stroke-linecap="round" transform="rotate(-90 60 60)" style="animation-delay: 2.9s;"></circle>
+</svg>
 <div>
-<h1>Le rapport que votre client comprend, généré par un script qui a déjà tourné.</h1>
-<p class="lead">Des scripts PowerShell pour auditer un parc de TPE, un tenant Microsoft 365 ou migrer un PC, avec leur procédure et un rapport client en français.</p>
-<div class="btns"><a class="btn btn-a" href="https://pactiofr.gumroad.com/l/bilan-express">Télécharger le Bilan express gratuit</a><a class="btn btn-l" href="#outils">Voir les outils</a></div>
-<p class="hero-note"><b>Lecture seule.</b> Aucun module à installer pour le bilan de santé. Testé sur un tenant de plus de 1 300 comptes et un labo Windows Server 2022.</p>
+<div style="font-size: 11px; color: #56655E; font-family: 'JetBrains Mono', monospace;">NOTE DU POSTE</div>
+<div style="font-size: 36px; font-weight: 800; line-height: 1; color: #0E7A55;"><span class="cnt" style="animation-delay: 2.9s;"></span><span style="font-size: 15px; color: #56655E;">/100</span></div>
 </div>
-<div class="demo" aria-hidden="true">
-<div class="console"><div class="bar">Windows PowerShell<button class="replay" type="button" tabindex="-1">Relancer</button></div><pre><span class="ln" style="--i:0"><span class="c-w">PS C:\Pactio&gt; .\Bilan-Express.ps1 -Client "Boulangerie Martin"</span></span><span class="ln" style="--i:1">&nbsp;</span><span class="ln" style="--i:2"><span class="c-g">===== Pactio · Bilan express =====</span></span><span class="ln" style="--i:3"><span class="c-c">  &gt; Analyse de ce poste (PC-ACCUEIL)…</span></span><span class="ln" style="--i:4"><span class="c-c">  &gt; Wi-Fi…</span></span><span class="ln" style="--i:5"><span class="c-c">  &gt; Mesure du débit descendant…</span></span><span class="ln" style="--i:6">&nbsp;</span><span class="ln" style="--i:7"><span class="c-g">  Note globale : 92/100</span></span><span class="ln" style="--i:8"><span class="c-w">    Postes      92/100</span></span><span class="ln" style="--i:9"><span class="c-w">    Sécurité    88/100</span></span><span class="ln" style="--i:10"><span class="c-d">    Réseau       — (non mesuré)</span><b class="cur"></b></span></pre></div>
-<div class="report"><div class="rt">Bilan de santé de votre informatique</div><div class="rs">Boulangerie Martin, 26 octobre 2026</div>
-<div class="row"><svg class="ring" viewBox="0 0 120 120" role="img" aria-label="Note globale 92 sur 100"><circle cx="60" cy="60" r="48" fill="none" stroke="#E6EFEE" stroke-width="12"/><circle cx="60" cy="60" r="48" fill="none" class="arc" stroke="#127A70" stroke-width="12" stroke-linecap="round" stroke-dasharray="277 302" transform="rotate(-90 60 60)"/><text x="60" y="70" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="32" fill="#13201F" class="score">92</text></svg><ul><li style="--j:0"><span class="tag t-i">Important</span>Compte utilisé au quotidien administrateur du PC</li><li style="--j:1"><span class="tag t-c">Conseil</span>14 programmes au démarrage</li><li style="--j:2"><span class="tag t-c">Conseil</span>Processeur de 2019, renouvellement à prévoir</li></ul></div></div>
 </div>
-</div></section>
-<script>(function(){var d=document.querySelector('.demo');if(!d||matchMedia('(prefers-reduced-motion: reduce)').matches)return;var sc=d.querySelector('.score');
-function play(){d.classList.remove('play');void d.offsetWidth;d.classList.add('play');sc.textContent='0';var t0=null,dl=2300,du=1100;function f(t){if(!t0)t0=t;var p=Math.min(1,Math.max(0,(t-t0-dl)/du));p=1-Math.pow(1-p,3);sc.textContent=Math.round(92*p);if(p<1)requestAnimationFrame(f)}requestAnimationFrame(f)}
-d.classList.add('play');if('IntersectionObserver' in window){new IntersectionObserver(function(e,ob){if(e[0].isIntersecting){ob.disconnect();d.classList.add('go');play()}},{threshold:.35}).observe(d)}else{d.classList.add('go');play()}d.querySelector('.replay').addEventListener('click',play)})();</script>
+<div style="font-size: 13px; padding: 8px 11px; background: #FFF4E2; border-radius: 10px;"><b style="color: #9A4A06;">Important</b> · Compte du quotidien administrateur</div>
+</div>
+</div>
+</div>
+</section>
 
-<section id="outils"><div class="wrap">
-<h2>Les outils</h2>
-<p class="intro">Commencez par le Bilan express, gratuit. Les packs ajoutent tout le parc, le réseau, le serveur, Microsoft 365 et vos couleurs sur les rapports.</p>
-<div class="free">
-<img src="img/bilan-express.jpg" alt="Couverture du Bilan express : le bilan d'un PC en 2 minutes, rapport noté sur 100" width="800" height="450" loading="lazy">
-<div><h3>Bilan express</h3><p style="margin-top:8px">Le bilan de santé d'un PC Windows en 2 minutes : version de Windows et fin de support, âge, disques, antivirus, comptes administrateurs, BitLocker, débit Internet et Wi-Fi. Le rapport est noté sur 100 et classe les actions par priorité.</p>
-<div class="price">Gratuit <small>ou le prix que vous voulez</small></div><a class="btn btn-a" href="https://pactiofr.gumroad.com/l/bilan-express">Télécharger</a></div>
+<div aria-hidden="true" style="background: #10201A; overflow: hidden; padding: 18px 0;">
+<div class="mq" style="display: flex; width: max-content; gap: 40px; font-size: 18px; font-weight: 700; color: #FFFFFF; white-space: nowrap;">
+<span>Bilan de parc</span><span style="color: #5EE0A3;">✦</span><span>Audit Microsoft 365</span><span style="color: #5EE0A3;">✦</span><span>Licences payées pour rien</span><span style="color: #5EE0A3;">✦</span><span>GPO prêtes à l'emploi</span><span style="color: #5EE0A3;">✦</span><span>LAPS et BitLocker</span><span style="color: #5EE0A3;">✦</span><span>Migration de PC</span><span style="color: #5EE0A3;">✦</span><span>Contrat de maintenance</span><span style="color: #5EE0A3;">✦</span>
+<span>Bilan de parc</span><span style="color: #5EE0A3;">✦</span><span>Audit Microsoft 365</span><span style="color: #5EE0A3;">✦</span><span>Licences payées pour rien</span><span style="color: #5EE0A3;">✦</span><span>GPO prêtes à l'emploi</span><span style="color: #5EE0A3;">✦</span><span>LAPS et BitLocker</span><span style="color: #5EE0A3;">✦</span><span>Migration de PC</span><span style="color: #5EE0A3;">✦</span><span>Contrat de maintenance</span><span style="color: #5EE0A3;">✦</span>
 </div>
-<div class="packs">
-<div class="pack"><img src="img/pack-tpe.jpg" alt="Couverture du Pack TPE" width="800" height="450" loading="lazy"><div class="in"><h3>Pack TPE</h3><p>Pour les TPE avec ou sans serveur.</p><ul><li>Bilan de santé de tout le parc, tournée par clé USB</li><li>Option serveur et Active Directory</li><li>Migration vers un nouveau PC</li><li>4 procédures PDF illustrées</li></ul><div class="foot"><div class="price">39 €</div><a class="btn btn-p" href="https://pactiofr.gumroad.com/l/pack-tpe">Voir le pack</a></div></div></div>
-<div class="pack"><img src="img/pack-m365.jpg" alt="Couverture du Pack Scripts Microsoft 365 et Intune" width="800" height="450" loading="lazy"><div class="in"><h3>Pack Microsoft 365 et Intune</h3><p>Pour les PME équipées de Microsoft 365.</p><ul><li>Licences payées pour rien, chiffrées en euros</li><li>Audit de sécurité du tenant noté sur 100</li><li>Inventaire Intune, Windows Update, Dell</li><li>6 scripts, 7 procédures</li></ul><div class="foot"><div class="price">39 €</div><a class="btn btn-p" href="https://pactiofr.gumroad.com/l/pack-scripts-m365">Voir le pack</a></div></div></div>
-<div class="pack"><div class="kit-visual">Kit Signature<span>Proposition, contrat, annexe RGPD</span></div><div class="in"><h3>Kit Signature</h3><p>Pour signer vos premiers contrats de maintenance.</p><ul><li>Proposition commerciale à deux formules</li><li>Contrat de maintenance informatique</li><li>Annexe RGPD (article 28)</li><li>Générateur à vos couleurs</li></ul><div class="foot"><div class="price">29 €</div><a class="btn btn-p" href="https://pactiofr.gumroad.com/l/kit-signature">Voir le kit</a></div></div></div>
 </div>
-</div></section>
 
-<section class="mist"><div class="wrap">
-<h2>Du script au rendez-vous client</h2>
-<p class="intro">Trois étapes, la même pour chaque outil.</p>
-<ol class="steps">
-<li><h3>Vous lancez le script</h3><p>Sur le poste du client ou depuis une clé USB, en suivant la procédure. Les audits ne modifient rien.</p></li>
-<li><h3>Le rapport se génère</h3><p>Une note sur 100, les constats classés critique, important ou conseil, avec l'appareil ou le compte concerné.</p></li>
-<li><h3>Vous le présentez</h3><p>Le client voit en une page ce qui doit être corrigé. C'est votre support pour un devis ou un contrat de maintenance.</p></li>
+<section aria-labelledby="c-avap" style="max-width: 1240px; margin: 0 auto; padding: 110px 24px 90px; display: flex; flex-direction: column; gap: 40px;">
+<h2 class="h2x" id="c-avap" style="margin: 0; font-size: 50px; line-height: 1.05; letter-spacing: -0.04em; font-weight: 800; max-width: 820px;">Même boulot technique. Pas du tout le même rendez-vous client.</h2>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px;">
+<div role="group" aria-label="Comparer" style="display: inline-flex; background: #E3E8E0; border-radius: 999px; padding: 5px; gap: 4px;">
+<button type="button" class="tg tg-sans" aria-pressed="true" data-mode="sans">Sans Pactio</button>
+<button type="button" class="tg tg-avec" aria-pressed="false" data-mode="avec">Avec Pactio</button>
+</div>
+<div style="display: flex; align-items: baseline; gap: 12px;">
+<span style="font-size: 15px; font-weight: 700; color: #56655E;">Temps passé</span>
+<span data-show="sans"><span class="pop" style="font-size: 52px; font-weight: 800; letter-spacing: -0.04em; line-height: 1; color: #9A4A06;">2 h</span></span>
+<span data-show="avec" hidden><span class="pop" style="font-size: 52px; font-weight: 800; letter-spacing: -0.04em; line-height: 1; color: #0E7A55;">2 min</span></span>
+</div>
+</div>
+<div style="position: relative; min-height: 470px; border-radius: 28px; background: #FFFFFF; border: 1.5px solid #DDE3DA; box-shadow: 0 30px 70px rgba(16,32,26,0.10); overflow: hidden;">
+
+<div data-show="sans">
+<div class="padc" style="padding: 34px 38px; display: flex; flex-direction: column; gap: 18px;">
+<div style="border: 1px solid #CED5CB; border-radius: 12px; overflow: hidden;">
+<div style="display: flex; align-items: center; gap: 10px; padding: 9px 14px; background: #F0F2EE; border-bottom: 1px solid #CED5CB; font-size: 13px; color: #56655E;"><span style="width: 14px; height: 14px; border-radius: 3px; background: #1D6F42;"></span>export_parc_final_v3_OK.csv<span style="margin-left: auto; font-family: 'JetBrains Mono', monospace; font-size: 11px;">12 colonnes · 0 explication</span></div>
+<div style="overflow: hidden; -webkit-mask-image: linear-gradient(90deg, #000 78%, transparent); mask-image: linear-gradient(90deg, #000 78%, transparent);">
+<table style="border-collapse: collapse; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #5B6A63;"><tr class="ln" style="animation-delay: 0.25s; background: #F0F2EE; font-weight: 600; color: #3E4E47;"><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">ComputerName</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">OS</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">Build</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">DiskC_Free</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">DiskC_Pct</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">SMART</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">FW_Priv</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">AV_Sig</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">BitLocker</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">LastBoot</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">Uptime_h</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">Startup</td></tr><tr class="ln" style="animation-delay: 0.53s;"><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">PC-COMPTA</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">Win11 Pro</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">26200.6899</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">18,2</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">81</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">OK</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">False</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">3</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">Off</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">28/10/2026 07:41</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">121</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">7</td></tr><tr class="ln" style="animation-delay: 0.81s;"><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">PC-ACCUEIL</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">Win11 Pro</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">26100.4946</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">64,9</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">37</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">OK</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">True</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">1</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">On</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">02/11/2026 08:03</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">9</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">4</td></tr><tr class="ln" style="animation-delay: 1.09s;"><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">PC-ATELIER</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">Win10 Pro</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">19045.6456</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">7,4</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">93</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">Warn</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">True</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">12</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">Off</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">14/10/2026 18:22</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">452</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">11</td></tr><tr class="ln" style="animation-delay: 1.37s;"><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">PC-GERANT</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">Win11 Pro</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">26200.6899</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">102,7</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">22</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">OK</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">True</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">2</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">On</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">01/11/2026 09:15</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">31</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">5</td></tr><tr class="ln" style="animation-delay: 1.65s;"><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">EventID</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">Source</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">Level</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">Count</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">LastSeen</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;"></td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;"></td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;"></td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;"></td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;"></td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;"></td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;"></td></tr><tr class="ln" style="animation-delay: 1.93s;"><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">41</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">Kernel-Power</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">Critical</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">3</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">29/10/2026</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;"></td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;"></td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;"></td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;"></td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;"></td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;"></td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;"></td></tr><tr class="ln" style="animation-delay: 2.21s;"><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">7031</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">Service Control Mgr</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">Error</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">12</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">02/11/2026</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;"></td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;"></td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;"></td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;"></td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;"></td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;"></td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;"></td></tr><tr class="ln" style="animation-delay: 2.49s;"><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">1001</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">WER</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">Info</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">27</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;">02/11/2026</td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;"></td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;"></td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;"></td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;"></td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;"></td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;"></td><td style="padding: 5px 8px; border-right: 1px solid #DCE1DA; border-bottom: 1px solid #DCE1DA; white-space: nowrap;"></td></tr></table>
+</div>
+</div>
+<div class="pop" style="animation-delay: 3s; align-self: flex-start; display: flex; align-items: center; gap: 12px; background: #FFF1DC; color: #8A4305; border-radius: 18px 18px 18px 4px; padding: 14px 20px; font-weight: 700; font-size: 17px;">Le client : « Euh… c'est grave, ça ? »</div>
+</div>
+</div>
+
+<div data-show="avec" hidden>
+<div class="padc" style="padding: 34px 38px; display: flex; flex-wrap: wrap; gap: 28px; align-items: flex-start;">
+<div style="flex: 1 1 300px; min-width: 0; background: #10201A; border-radius: 16px; padding: 18px 20px; font-family: 'JetBrains Mono', monospace; font-size: 12.5px; line-height: 1.8; color: #CFE2D8; display: flex; flex-direction: column; gap: 4px;">
+<div class="ln" style="animation-delay: .2s; color: #FFFFFF;">PS&gt; .\Bilan-Parc.ps1 -Client "Boulangerie Martin"</div>
+<div class="ln" style="animation-delay: .6s;">Analyse de 4 postes…</div>
+<div style="height: 8px; background: #22382F; border-radius: 6px; overflow: hidden; margin: 6px 0;"><div class="bar" style="height: 8px; background: #5EE0A3; border-radius: 6px;"></div></div>
+<div class="ln" style="animation-delay: 2.1s; color: #5EE0A3;">✓ Rapport généré : Bilan_Boulangerie-Martin.html</div>
+</div>
+<div class="pop" style="animation-delay: 2.3s; flex: 1.4 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 12px;">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 16px;">
+<div><div style="font-size: 13px; color: #56655E;">Bilan du parc · 4 postes</div><div style="font-size: 24px; font-weight: 800;">Boulangerie Martin</div></div>
+<div style="font-size: 54px; font-weight: 800; line-height: 1; color: #0E7A55;"><span class="cm"></span><span style="font-size: 18px; color: #56655E;">/100</span></div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; font-size: 12px; text-align: center; font-weight: 700;">
+<div class="pop" style="animation-delay: 2.6s; background: #E3F4EA; color: #0A5C40; border-radius: 12px; padding: 10px 4px;">GÉRANT<br><span style="font-size: 20px;">96</span></div>
+<div class="pop" style="animation-delay: 2.75s; background: #E3F4EA; color: #0A5C40; border-radius: 12px; padding: 10px 4px;">ACCUEIL<br><span style="font-size: 20px;">91</span></div>
+<div class="pop" style="animation-delay: 2.9s; background: #FFF1DC; color: #8A4305; border-radius: 12px; padding: 10px 4px;">COMPTA<br><span style="font-size: 20px;">74</span></div>
+<div class="pop" style="animation-delay: 3.05s; background: #FCE4E1; color: #9B1C12; border-radius: 12px; padding: 10px 4px;">ATELIER<br><span style="font-size: 20px;">52</span></div>
+</div>
+<div class="ln" style="animation-delay: 3.3s; font-size: 14px; padding: 11px 14px; background: #FCE4E1; border-radius: 10px;"><b style="color: #9B1C12;">Urgent</b> · Atelier : disque plein à 93 %, Windows 10 en fin de support</div>
+<div class="ln" style="animation-delay: 3.5s; font-size: 14px; padding: 11px 14px; background: #FFF4E2; border-radius: 10px;"><b style="color: #9A4A06;">Important</b> · Compta : pare-feu coupé, BitLocker désactivé</div>
+<div class="pop" style="animation-delay: 4s; align-self: flex-end; background: #E3F4EA; color: #0A5C40; border-radius: 18px 18px 4px 18px; padding: 14px 20px; font-weight: 700; font-size: 17px;">Le client : « D'accord, on commence par l'atelier. »</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="bilan" aria-labelledby="c-h-bilan" style="max-width: 1240px; margin: 0 auto; padding: 0 24px;">
+<div class="padx" style="background: #0E7A55; color: #FFFFFF; border-radius: 32px; padding: 72px 56px; display: flex; flex-direction: column; gap: 44px;">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px;">
+<div style="max-width: 680px; display: flex; flex-direction: column; gap: 14px;">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 700; color: #BFF0D6;">ÉTAPE 1 · GRATUIT · OPEN SOURCE</p>
+<h2 class="h2x" id="c-h-bilan" style="margin: 0; font-size: 58px; line-height: 1; letter-spacing: -0.045em; font-weight: 800;">Le Bilan express. Jugez sur pièce.</h2>
+</div>
+<a href="https://pactiofr.gumroad.com/l/bilan-express" style="background: #FFFFFF; color: #0A3D2C; text-decoration: none; padding: 18px 28px; border-radius: 999px; font-weight: 800; font-size: 17px;">Télécharger le Bilan express</a>
+</div>
+<ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px;">
+<li style="background: #0C6B4B; border-radius: 20px; padding: 26px; display: flex; flex-direction: column; gap: 8px;"><span style="font-family: 'JetBrains Mono', monospace; font-size: 40px; font-weight: 700; line-height: 1; color: #BFF0D6;">01</span><b style="font-size: 20px;">Téléchargez le ZIP</b><span style="font-size: 16px; color: #D7F2E4;">Rien à installer. Sur GitHub et la PowerShell Gallery.</span></li>
+<li style="background: #0C6B4B; border-radius: 20px; padding: 26px; display: flex; flex-direction: column; gap: 8px;"><span style="font-family: 'JetBrains Mono', monospace; font-size: 40px; font-weight: 700; line-height: 1; color: #BFF0D6;">02</span><b style="font-size: 20px;">Double-cliquez, cochez</b><span style="font-size: 16px; color: #D7F2E4;">Une fenêtre à cases à cocher, pas de console à déchiffrer.</span></li>
+<li style="background: #0C6B4B; border-radius: 20px; padding: 26px; display: flex; flex-direction: column; gap: 8px;"><span style="font-family: 'JetBrains Mono', monospace; font-size: 40px; font-weight: 700; line-height: 1; color: #BFF0D6;">03</span><b style="font-size: 20px;">Montrez le rapport</b><span style="font-size: 16px; color: #D7F2E4;">Une page claire, une note sur 100, des priorités.</span></li>
 </ol>
-</div></section>
-<script>(function(){var o=document.querySelector('.steps');if(!o||!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches)return;o.classList.add('anim');new IntersectionObserver(function(e,ob){if(e[0].isIntersecting){o.classList.add('on');ob.disconnect()}},{threshold:.5}).observe(o)})();</script>
-
-<section><div class="wrap">
-<h2>Testé avant d'être vendu</h2>
-<p class="intro">Un script généré en dix secondes a l'air parfait et casse chez le premier client. Chaque outil Pactio a tourné en réel, et ses pièges ont été corrigés.</p>
-<div class="proof">
-<div><b>Tenant de plus de 1 300 comptes</b><p>Audit des licences et audit de sécurité Microsoft 365 lancés sur un vrai tenant d'entreprise.</p></div>
-<div><b>Labo Windows Server 2022</b><p>Domaine Active Directory, PC Windows 11 joint, collecte à distance et migration de bout en bout.</p></div>
-<div><b>Vraies migrations de PC</b><p>Profils Firefox, Chrome et Edge, Outlook, imprimantes, lecteurs réseau, utilisateur standard.</p></div>
 </div>
-</div></section>
+</section>
 
-<section id="guides" class="mist"><div class="wrap">
-<h2>Guides</h2>
-<p class="intro">Des méthodes concrètes, utilisables avec ou sans nos outils.</p>
-<div class="guides">
-<a href="rapport-audit-informatique-tpe.html"><div><h3>Rapport d'audit informatique pour une TPE</h3><p>Les 6 thèmes à vérifier, la notation et le format que le client lit vraiment.</p></div><span class="rd">Lire</span></a>
-<a href="licences-microsoft-365-inutilisees.html"><div><h3>Licences Microsoft 365 payées pour rien : les 7 cas</h3><p>Comptes désactivés, licences qui se recouvrent, invités licenciés, et comment chiffrer l'économie.</p></div><span class="rd">Lire</span></a>
-<a href="audit-securite-microsoft-365.html"><div><h3>Audit de sécurité Microsoft 365 pour une PME</h3><p>MFA, administrateurs, accès conditionnel, invités, applications : par où commencer.</p></div><span class="rd">Lire</span></a>
-<a href="script-powershell-bilan-sante-pc.html"><div><h3>Bilan de santé d'un PC Windows avec PowerShell</h3><p>Les points à vérifier, en lecture seule, et une note sur 100 qui ne ment pas.</p></div><span class="rd">Lire</span></a>
-<a href="modele-contrat-maintenance-informatique.html"><div><h3>Contrat de maintenance informatique : les clauses indispensables</h3><p>Périmètre, délais, forfait et hors forfait, résiliation, annexe RGPD article 28.</p></div><span class="rd">Lire</span></a>
+<section aria-labelledby="c-h-vrai" style="max-width: 1240px; margin: 0 auto; padding: 110px 24px 0; display: flex; flex-wrap: wrap; gap: 56px; align-items: center;">
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 20px;">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #0E7A55; font-weight: 700;">PAS UNE MAQUETTE</p>
+<h2 class="h2x" id="c-h-vrai" style="margin: 0; font-size: 50px; line-height: 1.05; letter-spacing: -0.04em; font-weight: 800;">Voici le vrai rapport.</h2>
+<p style="margin: 0; font-size: 18px; color: #4A5A53;">Sorti tel quel du Bilan express v1.1, lancé sur un vrai PC le 2 novembre 2026. C'est exactement ce que votre client recevra.</p>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 16px; font-weight: 600;">
+<li style="display: flex; gap: 12px; align-items: flex-start;"><span style="color: #0E7A55; font-weight: 800;">✓</span>Une note globale, puis Postes, Sécurité, Réseau, Internet</li>
+<li style="display: flex; gap: 12px; align-items: flex-start;"><span style="color: #0E7A55; font-weight: 800;">✓</span>Le débit réel de la connexion, la latence, le Wi-Fi</li>
+<li style="display: flex; gap: 12px; align-items: flex-start;"><span style="color: #0E7A55; font-weight: 800;">✓</span>Des recommandations classées, en français, sans jargon</li>
+<li style="display: flex; gap: 12px; align-items: flex-start;"><span style="color: #0E7A55; font-weight: 800;">✓</span>Une page HTML, à imprimer en PDF en un clic</li>
+</ul>
 </div>
-</div></section>
+<div style="flex: 1 1 520px; min-width: 0; background: #FFFFFF; border: 1.5px solid #DDE3DA; border-radius: 20px; overflow: hidden; box-shadow: 0 30px 70px rgba(16,32,26,0.14);">
+<div style="display: flex; align-items: center; gap: 7px; padding: 11px 14px; background: #F0F2EE; border-bottom: 1px solid #DDE3DA;">
+<span style="width: 10px; height: 10px; border-radius: 50%; background: #FF5F57;"></span><span style="width: 10px; height: 10px; border-radius: 50%; background: #FEBC2E;"></span><span style="width: 10px; height: 10px; border-radius: 50%; background: #28C840;"></span>
+<span style="margin-left: 10px; flex-grow: 1; background: #FFFFFF; border-radius: 8px; padding: 4px 12px; font-size: 12px; color: #56655E;">Rapport_Bilan_Sante.html</span>
+</div>
+<div style="height: 520px; overflow: hidden;">
+<img class="scrollrep" src="img/rapport.webp" alt="Rapport réel du Bilan express : note globale 91 sur 100, Postes 88, Sécurité 88, Internet 100, débit, ordinateurs analysés et recommandations classées" style="width: 100%; display: block;">
+</div>
+</div>
+</section>
 
-<section><div class="wrap"><div class="band">
-<div><h2>Besoin d'un script précis ?</h2><p>Un audit propre à votre client, une tâche répétitive, un rapport que vos outils ne savent pas produire : je l'écris pour vous, testé et documenté.</p></div>
-<div><a class="btn btn-a" href="script-sur-mesure.html">Demander un script sur mesure</a></div>
-</div></div></section>
+<section id="outils" aria-labelledby="c-h-outils" style="max-width: 1240px; margin: 0 auto; padding: 110px 24px 60px; display: flex; flex-direction: column; gap: 40px;">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 20px;">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 700px;">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #0E7A55; font-weight: 700;">ÉTAPE 2 · QUAND VOUS SIGNEZ</p>
+<h2 class="h2x" id="c-h-outils" style="margin: 0; font-size: 50px; line-height: 1.05; letter-spacing: -0.04em; font-weight: 800;">Le script, la procédure, le rapport. Prêts.</h2>
+</div>
+<p style="margin: 0; font-size: 15px; color: #4A5A53; max-width: 340px;">Achat unique. Pas d'abonnement, rien d'hébergé chez nous. Clients illimités.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px;">
+<article class="card" style="background: #FFFFFF; border: 1.5px solid #DDE3DA; border-radius: 24px; padding: 28px; display: flex; flex-direction: column; gap: 14px; min-height: 340px;">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 10px;"><div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #0E7A55; font-weight: 700;">TPE · ARTISANS</div><span style="width: 52px; height: 52px; border-radius: 14px; background: #E3F4EA; display: flex; align-items: center; justify-content: center;"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#0E7A55" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"></rect><path d="M8 20h8M12 16v4"></path></svg></span></div>
+<h3 style="margin: 0; font-size: 25px; font-weight: 800;">Pack TPE</h3>
+<p style="margin: 0; font-size: 15px; color: #4A5A53; flex-grow: 1;">Bilan de tout le parc par clé USB, option serveur et AD, migration de PC, 4 procédures PDF.</p>
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #0A5C40; background: #EEF7F2; border-radius: 10px; padding: 10px 12px;">Pour vous si vos clients sont des artisans ou des TPE, de 2 à 20 postes.</p>
+<div style="display: flex; justify-content: space-between; align-items: center;"><span style="font-size: 34px; font-weight: 800;">39 €</span><a href="https://pactiofr.gumroad.com/l/pack-tpe" style="font-weight: 800; text-decoration: none; padding: 10px 0;">Voir →</a></div>
+</article>
+<article class="card" style="background: #FFFFFF; border: 1.5px solid #DDE3DA; border-radius: 24px; padding: 28px; display: flex; flex-direction: column; gap: 14px; min-height: 340px;">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 10px;"><div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #0E7A55; font-weight: 700;">PME · MICROSOFT 365</div><span style="width: 52px; height: 52px; border-radius: 14px; background: #E3F4EA; display: flex; align-items: center; justify-content: center;"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#0E7A55" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18a4.5 4.5 0 0 1-.6-8.96A6 6 0 0 1 18 8.5a4 4 0 0 1-1 9.5H7z"></path></svg></span></div>
+<h3 style="margin: 0; font-size: 25px; font-weight: 800;">Pack M365 &amp; Intune</h3>
+<p style="margin: 0; font-size: 15px; color: #4A5A53; flex-grow: 1;">Licences payées pour rien, sécurité du tenant, inventaire Intune. 6 scripts, 7 procédures.</p>
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #0A5C40; background: #EEF7F2; border-radius: 10px; padding: 10px 12px;">Pour vous si vos clients paient des licences Microsoft 365.</p>
+<div style="display: flex; justify-content: space-between; align-items: center;"><span style="font-size: 34px; font-weight: 800;">39 €</span><a href="https://pactiofr.gumroad.com/l/pack-scripts-m365" style="font-weight: 800; text-decoration: none; padding: 10px 0;">Voir →</a></div>
+</article>
+<article class="card" style="background: #FFFFFF; border: 1.5px solid #DDE3DA; border-radius: 24px; padding: 28px; display: flex; flex-direction: column; gap: 14px; min-height: 340px;">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 10px;"><div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #0E7A55; font-weight: 700;">DOMAINE AD · NOUVEAU</div><span style="width: 52px; height: 52px; border-radius: 14px; background: #E3F4EA; display: flex; align-items: center; justify-content: center;"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#0E7A55" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="7" rx="1.5"></rect><rect x="4" y="14" width="16" height="7" rx="1.5"></rect><path d="M8 6.5h.01M8 17.5h.01"></path></svg></span></div>
+<h3 style="margin: 0; font-size: 25px; font-weight: 800;">Pack GPO</h3>
+<p style="margin: 0; font-size: 15px; color: #4A5A53; flex-grow: 1;">Imprimantes et lecteurs déployés proprement, LAPS, BitLocker, admins locaux retirés. Simulation par défaut.</p>
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #0A5C40; background: #EEF7F2; border-radius: 10px; padding: 10px 12px;">Pour vous si vos clients ont un serveur et un domaine Windows.</p>
+<div style="display: flex; justify-content: space-between; align-items: center;"><span style="font-size: 34px; font-weight: 800;">49 €</span><a href="https://pactiofr.gumroad.com/l/pack-gpo" style="font-weight: 800; text-decoration: none; padding: 10px 0;">Voir →</a></div>
+</article>
+<article class="card" style="background: #FFFFFF; border: 1.5px solid #DDE3DA; border-radius: 24px; padding: 28px; display: flex; flex-direction: column; gap: 14px; min-height: 340px;">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 10px;"><div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #0E7A55; font-weight: 700;">POUR SIGNER</div><span style="width: 52px; height: 52px; border-radius: 14px; background: #E3F4EA; display: flex; align-items: center; justify-content: center;"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#0E7A55" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"></path><path d="M14 3v5h5M9 16l2-2 4 1"></path></svg></span></div>
+<h3 style="margin: 0; font-size: 25px; font-weight: 800;">Kit Signature</h3>
+<p style="margin: 0; font-size: 15px; color: #4A5A53; flex-grow: 1;">Proposition commerciale, contrat de maintenance, annexe RGPD, générateur à vos couleurs.</p>
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #0A5C40; background: #EEF7F2; border-radius: 10px; padding: 10px 12px;">Pour vous si vous devez signer votre premier contrat de maintenance.</p>
+<div style="display: flex; justify-content: space-between; align-items: center;"><span style="font-size: 34px; font-weight: 800;">29 €</span><a href="https://pactiofr.gumroad.com/l/kit-signature" style="font-weight: 800; text-decoration: none; padding: 10px 0;">Voir →</a></div>
+</article>
+</div>
+</section>
 
-<section class="mist"><div class="wrap">
-<h2>Questions fréquentes</h2>
-<div style="max-width:820px;margin-top:24px"><div class="faq"><details><summary>Les scripts Pactio modifient-ils les postes ou le tenant du client ?</summary><p>Non pour les audits : le Bilan express, le bilan de santé du parc, l&#x27;audit des licences et l&#x27;audit de sécurité Microsoft 365 sont en lecture seule. Les scripts qui corrigent (Windows Update, Dell Command Update, restauration de migration) ont un mode simulation et ne se lancent que si vous le demandez.</p></details><details><summary>Faut-il installer quelque chose ?</summary><p>Les scripts du Pack TPE et le Bilan express tournent avec PowerShell 5.1, fourni par Windows 10 et 11, sans module à installer. Les scripts Microsoft 365 utilisent le module officiel Microsoft Graph PowerShell, installé par un script de préparation fourni.</p></details><details><summary>Peut-on mettre son propre logo sur les rapports ?</summary><p>Oui. Les rapports des packs acceptent votre nom, votre logo et votre couleur. La version gratuite du Bilan express garde la présentation Pactio.</p></details><details><summary>Les scripts ont-ils vraiment été testés ?</summary><p>Oui, chaque script a tourné en conditions réelles avant sa mise en vente : un tenant Microsoft 365 de plus de 1 300 comptes, un labo Windows Server 2022 avec domaine Active Directory et un PC Windows 11 joint, et de vraies migrations de PC.</p></details><details><summary>Puis-je utiliser les scripts chez tous mes clients ?</summary><p>Oui. La licence couvre une entreprise, avec des clients illimités. La revente et le partage des scripts sont interdits.</p></details><details><summary>Comment se passe l&#x27;achat ?</summary><p>Par Gumroad, qui encaisse le paiement, gère la TVA et envoie le lien de téléchargement par mail immédiatement.</p></details></div></div>
-</div></section>
+<section id="tests" aria-labelledby="c-h-tests" style="max-width: 1240px; margin: 0 auto; padding: 60px 24px 110px; display: flex; flex-direction: column; gap: 36px;">
+<h2 class="h2x" id="c-h-tests" style="margin: 0; font-size: 50px; line-height: 1.05; letter-spacing: -0.04em; font-weight: 800; max-width: 760px;">Testé sur de vrais parcs. Pas dans un tuto.</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px;">
+<div style="border-top: 3px solid #0E7A55; padding-top: 18px;"><div style="font-size: 60px; font-weight: 800; letter-spacing: -0.04em; line-height: 1; color: #0E7A55;"><span class="ca"></span>+</div><div style="color: #3E4E47; margin-top: 8px; font-weight: 600;">comptes Microsoft 365 audités sur un vrai tenant d'entreprise</div></div>
+<div style="border-top: 3px solid #0E7A55; padding-top: 18px;"><div style="font-size: 60px; font-weight: 800; letter-spacing: -0.04em; line-height: 1; color: #0E7A55;">AD</div><div style="color: #3E4E47; margin-top: 8px; font-weight: 600;">Windows Server 2022 et domaine Active Directory, en labo complet</div></div>
+<div style="border-top: 3px solid #0E7A55; padding-top: 18px;"><div style="font-size: 60px; font-weight: 800; letter-spacing: -0.04em; line-height: 1; color: #0E7A55;">27 ans</div><div style="color: #3E4E47; margin-top: 8px; font-weight: 600;">de terrain derrière chaque procédure</div></div>
+</div>
+</section>
+
+<section id="qui" aria-labelledby="c-h-qui" style="max-width: 1240px; margin: 0 auto; padding: 0 24px 110px; display: flex; flex-wrap: wrap; gap: 20px;">
+<div style="flex: 2 1 560px; min-width: 0; background: #FFFFFF; border: 1.5px solid #DDE3DA; border-radius: 24px; padding: 40px; display: flex; flex-direction: column; gap: 16px;">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #0E7A55; font-weight: 700;">QUI EST DERRIÈRE</p>
+<h2 id="c-h-qui" style="margin: 0; font-size: 36px; line-height: 1.12; letter-spacing: -0.035em; font-weight: 800;">Un admin qui vend ce qu'il utilise lui-même.</h2>
+<p style="margin: 0; font-size: 17px; color: #4A5A53;">Sébastien Mastain, administrateur systèmes et réseaux depuis 27 ans, infogérant de TPE et PME en Isère avec SérénIT38. Chaque pack sort d'une vraie intervention : écrit, testé en labo et en entreprise, livré avec la procédure que j'aurais aimé trouver en me lançant.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+<a href="https://g.page/r/CY71vqANLK-BEBM" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px; background: #FFF6DE; color: #6B4A00; border-radius: 999px; padding: 9px 14px; font-size: 14px; font-weight: 800; text-decoration: none;">★ 5,0 · 10 avis Google (SérénIT38) ↗</a>
+<a href="https://github.com/sebastienmastain/bilan-express" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px; background: #EEF7F2; color: #0A5C40; border-radius: 999px; padding: 9px 14px; font-size: 14px; font-weight: 800; text-decoration: none;">Bilan express open source sur GitHub ↗</a>
+<span style="display: inline-flex; align-items: center; gap: 8px; background: #EEF7F2; color: #0A5C40; border-radius: 999px; padding: 9px 14px; font-size: 14px; font-weight: 800;">v1.1 sortie à la demande des lecteurs de r/Sysadmin_Fr</span>
+</div>
+<a href="https://www.serenit38.fr/" target="_blank" rel="noopener" style="align-self: flex-start; font-weight: 800; text-decoration: none; border: 1.5px solid #0E7A55; border-radius: 999px; padding: 11px 18px;">Voir le site SérénIT38, infogérance en Isère ↗</a>
+</div>
+<div style="flex: 1 1 300px; min-width: 0; background: #10201A; color: #FFFFFF; border-radius: 24px; padding: 36px; display: flex; flex-direction: column; gap: 14px; justify-content: space-between;">
+<div style="font-size: 24px; font-weight: 800; letter-spacing: -0.02em;">Un script précis qui revient chez tous vos clients ?</div>
+<p style="margin: 0; font-size: 15px; color: #C9DDD3;">Audit, migration, déploiement : je peux l'écrire pour vous, testé et documenté.</p>
+<a href="script-sur-mesure.html" style="background: #5EE0A3; color: #10201A; text-decoration: none; padding: 15px 20px; border-radius: 999px; font-weight: 800; text-align: center;">Demander un script sur mesure</a>
+</div>
+</section>
+
+<section id="guides" aria-labelledby="c-h-guides" style="max-width: 1240px; margin: 0 auto; padding: 0 24px 100px; display: flex; flex-wrap: wrap; gap: 56px;">
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 18px;">
+<h2 id="c-h-guides" style="margin: 0; font-size: 34px; letter-spacing: -0.035em; font-weight: 800;">Guides gratuits</h2>
+<div style="display: flex; flex-direction: column; border-top: 1px solid #CDD5C9;">
+<a href="rapport-audit-informatique-tpe.html" style="display: flex; justify-content: space-between; gap: 14px; padding: 17px 0; border-bottom: 1px solid #CDD5C9; text-decoration: none; color: #10201A; font-weight: 600;"><span>Rapport d'audit informatique pour une TPE</span><span style="color: #0E7A55;">→</span></a>
+<a href="licences-microsoft-365-inutilisees.html" style="display: flex; justify-content: space-between; gap: 14px; padding: 17px 0; border-bottom: 1px solid #CDD5C9; text-decoration: none; color: #10201A; font-weight: 600;"><span>Licences Microsoft 365 payées pour rien : les 7 cas</span><span style="color: #0E7A55;">→</span></a>
+<a href="audit-securite-microsoft-365.html" style="display: flex; justify-content: space-between; gap: 14px; padding: 17px 0; border-bottom: 1px solid #CDD5C9; text-decoration: none; color: #10201A; font-weight: 600;"><span>Audit de sécurité Microsoft 365 pour une PME</span><span style="color: #0E7A55;">→</span></a>
+<a href="script-powershell-bilan-sante-pc.html" style="display: flex; justify-content: space-between; gap: 14px; padding: 17px 0; border-bottom: 1px solid #CDD5C9; text-decoration: none; color: #10201A; font-weight: 600;"><span>Bilan de santé d'un PC Windows avec PowerShell</span><span style="color: #0E7A55;">→</span></a>
+<a href="modele-contrat-maintenance-informatique.html" style="display: flex; justify-content: space-between; gap: 14px; padding: 17px 0; border-bottom: 1px solid #CDD5C9; text-decoration: none; color: #10201A; font-weight: 600;"><span>Contrat de maintenance : les clauses indispensables</span><span style="color: #0E7A55;">→</span></a>
+</div>
+</div>
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 18px;">
+<h2 style="margin: 0; font-size: 34px; letter-spacing: -0.035em; font-weight: 800;">Questions</h2>
+<div style="display: flex; flex-direction: column; border-top: 1px solid #CDD5C9;">
+<details style="border-bottom: 1px solid #CDD5C9; padding: 17px 0;"><summary style="display: flex; justify-content: space-between; gap: 14px; font-weight: 700;">Les scripts modifient-ils les postes ?<span class="plus" style="color: #0E7A55; font-size: 22px; line-height: 1;">+</span></summary><p style="margin: 10px 0 0; color: #4A5A53; font-size: 15px;">Non pour les audits, en lecture seule. Les scripts correctifs démarrent en simulation et n'agissent que sur votre demande.</p></details>
+<details style="border-bottom: 1px solid #CDD5C9; padding: 17px 0;"><summary style="display: flex; justify-content: space-between; gap: 14px; font-weight: 700;">Faut-il installer quelque chose ?<span class="plus" style="color: #0E7A55; font-size: 22px; line-height: 1;">+</span></summary><p style="margin: 10px 0 0; color: #4A5A53; font-size: 15px;">PowerShell 5.1 suffit pour le Bilan express et le Pack TPE. Microsoft Graph s'installe avec un script fourni pour M365.</p></details>
+<details style="border-bottom: 1px solid #CDD5C9; padding: 17px 0;"><summary style="display: flex; justify-content: space-between; gap: 14px; font-weight: 700;">Puis-je mettre mon logo ?<span class="plus" style="color: #0E7A55; font-size: 22px; line-height: 1;">+</span></summary><p style="margin: 10px 0 0; color: #4A5A53; font-size: 15px;">Oui dans les versions payantes : logo, nom et couleur sur les rapports.</p></details>
+<details style="border-bottom: 1px solid #CDD5C9; padding: 17px 0;"><summary style="display: flex; justify-content: space-between; gap: 14px; font-weight: 700;">Chez combien de clients ?<span class="plus" style="color: #0E7A55; font-size: 22px; line-height: 1;">+</span></summary><p style="margin: 10px 0 0; color: #4A5A53; font-size: 15px;">Autant que vous voulez. Revente et partage interdits.</p></details>
+<details style="border-bottom: 1px solid #CDD5C9; padding: 17px 0;"><summary style="display: flex; justify-content: space-between; gap: 14px; font-weight: 700;">Comment se passe l'achat ?<span class="plus" style="color: #0E7A55; font-size: 22px; line-height: 1;">+</span></summary><p style="margin: 10px 0 0; color: #4A5A53; font-size: 15px;">Sur Gumroad : paiement, TVA et lien de téléchargement par mail.</p></details>
+</div>
+</div>
+</section>
+
+<section aria-labelledby="c-h-fin" style="max-width: 1240px; margin: 0 auto; padding: 0 24px 60px;">
+<div class="padx" style="background: #10201A; color: #FFFFFF; border-radius: 32px; padding: 90px 40px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 28px;">
+<h2 class="h2x" id="c-h-fin" style="margin: 0; font-size: 60px; line-height: 1.02; letter-spacing: -0.045em; font-weight: 800; max-width: 880px;">Testez-le sur votre propre PC. <span style="color: #5EE0A3;">2 minutes, gratuit.</span></h2>
+<p style="margin: 0; font-size: 19px; color: #C9DDD3; max-width: 620px;">Lancez le Bilan express, ouvrez le rapport, et imaginez-le posé sur le bureau de votre prochain client.</p>
+<a class="pulse" href="https://pactiofr.gumroad.com/l/bilan-express" style="background: #5EE0A3; color: #10201A; text-decoration: none; padding: 19px 32px; border-radius: 999px; font-weight: 800; font-size: 18px;">Lancer le Bilan express gratuit</a>
+</div>
+</section>
+
+
+</div>
 </main>
 <footer><div class="wrap"><div class="f">
-<div><b>Pactio</b><p style="margin-top:8px">Des scripts PowerShell testés en réel pour les informaticiens qui interviennent en TPE et PME. Créé par Sébastien Mastain, administrateur systèmes et réseaux depuis 27 ans, fondateur de <a style="display:inline" href="https://www.serenit38.fr">SérénIT38</a>, infogérance et maintenance informatique des TPE et PME en Isère.</p></div>
-<div><b>Outils</b><a href="https://pactiofr.gumroad.com/l/bilan-express">Bilan express gratuit</a><a href="https://pactiofr.gumroad.com/l/pack-tpe">Pack TPE</a><a href="https://pactiofr.gumroad.com/l/pack-scripts-m365">Pack Microsoft 365</a><a href="https://pactiofr.gumroad.com/l/kit-signature">Kit Signature</a></div>
+<div><b>Pactio</b><p>Des scripts PowerShell testés en réel pour les informaticiens qui interviennent en TPE et PME. Créé par Sébastien Mastain, administrateur systèmes et réseaux depuis 27 ans, fondateur de <a style="display:inline" href="https://www.serenit38.fr" target="_blank" rel="noopener">SérénIT38</a>, infogérance et maintenance informatique des TPE et PME en Isère (<a style="display:inline" href="https://g.page/r/CY71vqANLK-BEBM" target="_blank" rel="noopener">★ 5,0 sur Google</a>).</p></div>
+<div><b>Outils</b><a href="https://pactiofr.gumroad.com/l/bilan-express">Bilan express gratuit</a><a href="https://pactiofr.gumroad.com/l/pack-tpe">Pack TPE</a><a href="https://pactiofr.gumroad.com/l/pack-scripts-m365">Pack Microsoft 365</a><a href="https://pactiofr.gumroad.com/l/pack-gpo">Pack GPO</a><a href="https://pactiofr.gumroad.com/l/kit-signature">Kit Signature</a></div>
 <div><b>Pactio</b><a href="index.html#guides">Guides</a><a href="script-sur-mesure.html">Script sur mesure</a><a href="a-propos.html">À propos</a><a href="mentions-legales.html">Mentions légales</a></div>
-</div><p class="legal">Pactio est un nom commercial de Sébastien Mastain EI, Tullins (38). Ventes et paiements assurés par Gumroad.</p></div></footer>
+</div><p class="legal">Pactio est un nom commercial de Sébastien Mastain EI, Tullins (38). Ventes et paiements assurés par Gumroad. Photo d'accueil : Glenn Carstens-Peters / Unsplash.</p></div></footer>
+<script>(function(){
+var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+function replay(el){var n=el.cloneNode(true);el.parentNode.replaceChild(n,el);return n;}
+var h=document.getElementById('heroAnim');
+if(h&&!rm){setInterval(function(){h=replay(h);},10000);}
+var mode='sans',touched=false;
+function set(m){mode=m;document.querySelectorAll('.tg').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.mode===m?'true':'false');});
+document.querySelectorAll('[data-show]').forEach(function(el){var on=el.dataset.show===m;if(on){el.hidden=false;if(!rm)replay(el);}else{el.hidden=true;}});}
+document.querySelectorAll('.tg').forEach(function(b){b.addEventListener('click',function(){touched=true;set(b.dataset.mode);});});
+setInterval(function(){if(!touched)set(mode==='sans'?'avec':'sans');},6500);
+})();</script>
 </body></html>

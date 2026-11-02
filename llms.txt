@@ -6,6 +6,7 @@
 - [Bilan express (gratuit)](https://pactiofr.gumroad.com/l/bilan-express) : bilan de santé d'un PC Windows en 2 minutes, rapport noté sur 100, lecture seule, PowerShell 5.1 sans module.
 - [Pack TPE (39 €)](https://pactiofr.gumroad.com/l/pack-tpe) : bilan de santé de tout le parc (postes, réseau, Internet, Wi-Fi), option serveur et Active Directory, migration de PC. 3 scripts, 4 procédures PDF.
 - [Pack Scripts Microsoft 365 et Intune (39 €)](https://pactiofr.gumroad.com/l/pack-scripts-m365) : audit des licences chiffré en euros, audit de sécurité du tenant noté sur 100, inventaire Intune, Windows Update, Dell Command Update. 6 scripts.
+- [Pack GPO (49 €)](https://pactiofr.gumroad.com/l/pack-gpo) : imprimantes et lecteurs réseau par GPO, LAPS, BitLocker, retrait des admins locaux, mode simulation par défaut.
 - [Kit Signature (29 €)](https://pactiofr.gumroad.com/l/kit-signature) : proposition commerciale, contrat de maintenance informatique et annexe RGPD, avec générateur.
 
 ## Guides
